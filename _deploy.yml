@@ -1,0 +1,6 @@
+method: git
+site_dir: _site
+
+git_url: git@github.com:kiliankoe/blog
+remote: origin
+git_branch: gh-pages
