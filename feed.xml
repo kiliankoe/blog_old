@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trial and error</title>
+    <description>Kilian&#39;s blog &#39;n stuff. Sounds about right.
+</description>
+    <link>http://blog.kilian.io/</link>
+    <atom:link href="http://blog.kilian.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Aug 2015 15:41:07 +0200</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2015 15:41:07 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Why I&#39;ll Be Keeping My Apple Watch</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/6gd3p3O.jpg&quot; alt=&quot;apple watch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;:
+I changed the post title from &lt;em&gt;Why I won’t be keeping my Apple Watch&lt;/em&gt; to the current one. Let me explain why.&lt;/p&gt;
+
+&lt;p&gt;My biggest gripe with the watch was the in my opinion &lt;em&gt;abysmal&lt;/em&gt; battery performance of my iPhone when connected to the watch. I’m not entirely sure what changed, but I believe the watch is actually affecting how I use my phone during the day. Specifically how often I do so. I’m currently ending ~16 hour days with around 70% of a charge left in the watch and my iPhone somewhere around 50%. That’s actually &lt;em&gt;better&lt;/em&gt; than what I’m used to without the watch!&lt;/p&gt;
+
+&lt;p&gt;Let me somewhat reiterate on the other cons listed below as well:&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;low usability&lt;/em&gt; is still something I struggle with. Although it’s gotten better. The only apps really not playing all too nice with the watch are those that send notifications, but don’t tell you what they’re about. In my case those would be Threema and Signal. The problem is that this is actually somewhat the point of these apps, so I guess I’ll just have to live with that.
+The &lt;em&gt;social stigma&lt;/em&gt; is also still there. Using the watch daily you just get better at not pissing other people off when looking at it discreetly. Or you do it so much that others just don’t care anymore 😉
+And for Siri… Well, I’ve just gotten used to activating Siri by pressing the digital crown. Voice activation still seems to hate me.&lt;/p&gt;
+
+&lt;p&gt;So much for the update. Read below for the original post written a few days after I originally got the watch.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This post is basically one big personal opinion. Some things I’ve noticed about the Apple Watch while using it for a short time. Maybe others will see them the same way and maybe these points don’t apply to you at all, that’s ok, I’m not trying to make any definitive statement. This is just what I’ve observed.&lt;/p&gt;
+
+&lt;p&gt;Let’s make this one big pro/contra list and start it out with the positive points. The stuff the Apple Watch gets right.&lt;/p&gt;
+
+&lt;h2 id=&quot;pros&quot;&gt;Pros&lt;/h2&gt;
+
+&lt;h3 id=&quot;taptic-engine&quot;&gt;Taptic Engine&lt;/h3&gt;
+&lt;p&gt;This is hands-down &lt;em&gt;the&lt;/em&gt; best Watch feature. The way the Watch notifies you about pretty much anything is something I fell in love with right away. It’s extremely subtle yet still impossible to miss.
+We’re all used to having our phones vibrate in our pockets to tell us stuff is going on. And even though this works, it’s tedious pulling your phone out of your pocket only to see you just received mail you don’t care about. Worst part about this though is that the people around you probably &lt;em&gt;heard&lt;/em&gt; the vibration go off and saw you take a look at your phone. So even if you chose not to have a look at it, everybody around you got notified about it.
+The Watch’s taptic engine is something you just don’t hear at all&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. And if you do choose to look at it, you just raise your wrist and see what it’s all about. This is fantastic.
+It’s also great how the iPhone - when it’s trying to send you a notification - checks to see if it’s connected to a watch first and if you’re currently wearing it so that it can send the notification in the best way possible. I know a guy who owns a Moto 360 and whenever he gets a notification I can hear his phone vibrate and seconds later I hear his watch vibrate as well. That’s not how it should be.&lt;/p&gt;
+
+&lt;h3 id=&quot;activity-and-heart-rate&quot;&gt;Activity and heart rate&lt;/h3&gt;
+&lt;p&gt;The Apple Watch is all about health tracking. Not only does it track how often you stand up and walk about, but it uses it’s huge optical sensor on the back to check your heart rate every 20 minutes. I’ve used a Fitbit and Misfit tracker for a little while and am infected by the gamification virus&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; so I’m happy to see that you can also gather different achievements based on how often you achieve the activity tracker goals.
+I’m also a huge fan of all kinds of statistics about myself. I absolutely love having stats and visualized graphs about as much of my life as I can and this whole quantified self movement plays right up that alley. So being able to view a graph of my heart rate in the Health Kit app and everything the Activity app does is something I enjoy a lot. The only thing I’d enjoy even more here would be a finer-grained heart rate measurement. Probably something not possible with the watch’s battery life at the moment, but only every 20 minutes is kinda rough.&lt;/p&gt;
+
+&lt;h3 id=&quot;time-and-temperature&quot;&gt;Time and temperature&lt;/h3&gt;
+&lt;p&gt;I might not have been a big watch user the last few years. But every time I do wear one on my wrist, I very much enjoy the convenience of quickly being able to tell the time. It seems like such a minor thing, but it definitely is worth a lot. I also check my iPhone multiple times a day for the current temperature outside. Doing this with the same simplicity of checking the time is also very comfortable. Definitely a plus.&lt;/p&gt;
+
+&lt;h3 id=&quot;digital-crown&quot;&gt;Digital Crown&lt;/h3&gt;
+&lt;p&gt;Remember how excited Jonny Ive seemed about the digital crown when the Apple Watch was announced? It seemed kinda ridiculous at the time, but now I have to say that this input device really is something. Scrolling through content with the digital crown just feels so much easier than swiping on this little screen. I’m very happy Apple chose this route and did not just give us a little iPhone screen on our wrists where we have to swipe on the screen obstructing the view almost entirely.&lt;/p&gt;
+
+&lt;h2 id=&quot;cons&quot;&gt;Cons&lt;/h2&gt;
+&lt;p&gt;So much for the positive points, let’s get to why I’m actually writing this. The things I unfortunately don’t like about the watch.&lt;/p&gt;
+
+&lt;h3 id=&quot;battery&quot;&gt;Battery&lt;/h3&gt;
+&lt;p&gt;The watch’s battery is something a lot of people have already criticized before it even came out. Seemed a bit unfair at the time and it turns out the criticism doesn’t really apply. The watch’s internal battery seems to be able to easily run for at least two days without a problem. The actual problem here is the battery of the iPhone it’s paired to. My iPhone used to be able to run for more than 48 hours with moderate usage. Using the same set of apps and adding minimal playing around on the watch I got 9 hours of battery life from my phone before it died on me. I played around with the iPhone settings, revoked background activity rights from a lot of apps which didn’t need this for their core functionality and even kicked quite a few apps from my phone that I didn’t really use. Add this to strictly only using the watch for notifications and even not using the phone besides answering a few messages and I got it to 14 hours. That’s still ridiculously low. I usually use my phone a lot more than that and can’t have it running out of juice every single evening. Sorry, but this is a &lt;strong&gt;huge&lt;/strong&gt; deal breaker.
+My iPhone is also constantly warm, which just adds to the fact that the watch is stressing it even when I’m not using it.&lt;/p&gt;
+
+&lt;h3 id=&quot;low-usability&quot;&gt;Low usability&lt;/h3&gt;
+&lt;p&gt;To be fair the watch really isn’t meant as a replacement device for my phone. The whole idea is having something on your wrist that taps you on incoming notifications and gives you quick overviews for stuff that prompts you to pull your phone out of your pocket the most. I haven’t really gotten used to using glances on the watch&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, but this is what that small device on your wrist is for. Doing much more than that like trying to productively answer messages and read e-mail is just absurd.
+Yet this is what I most struggle with. I receive a notification about an incoming message. I see that on the watch. I can then either (if it’s something like iMessage that even lets me interactively answer it on the watch) choose to answer it with a predefined message or talk to my watch (nope). If the predefined message doesn’t fit I’m back to pulling out my phone. Most messages throughout the day aren’t received through iMessage though, but through Threema, Signal, Facebook Chat or sadly even WhatsApp besides others. None of these even offer me the option of using an ill-fitting predefined message or dictation (again: nope). So all I get by wearing the watch is the neat notification that I can then either ignore or take out my phone to answer.&lt;/p&gt;
+
+&lt;h3 id=&quot;social-stigma&quot;&gt;Social stigma&lt;/h3&gt;
+&lt;p&gt;This one’s a doozy. It has been very awkward in the past to be at some kind of event or gathering and pulling out your phone to check what a vibration was about. You usually just don’t do it&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. But while it’s much easier sneaking a peak at your watch, it turns out that it’s even less acceptable and sends far more of a negative message doing this. It sends a signal to other people that you’re bored and want to be somewhere else when you’re maybe just checking a tweet you were mentioned in. And this’ll stay a problem as long as smartwatches or fancy wearables aren’t yet ubiquitous.
+Maybe I am overthinking it, but even if the uncomfortable feeling is just in my head, it’s still there.&lt;/p&gt;
+
+&lt;h3 id=&quot;siri&quot;&gt;Siri&lt;/h3&gt;
+&lt;p&gt;When Apple first announced Siri I never thought I’d use it. And even though I still hate using the dictation feature, Siri has come to be something I use often. What the weather is going to be like or to set timers and reminders are the functions I use most of the time and several times daily. It still astounds me how well this works on the iPhone.
+On the watch however it’s a different picture. I’m not sure what the cause for this is, but I can’t get the &lt;em&gt;Hey Siri&lt;/em&gt; command to function 50% of the time and when it does it usually already jumps to &lt;em&gt;How can I help you?&lt;/em&gt; once it displays itself ignoring my additional input. This has me losing trust in a feature I’ve reliably been using on my phone which means I sadly just won’t be using it on the watch.&lt;/p&gt;
+
+&lt;p&gt;There are a few other minor points as well, but they feel like nitpicking. Things like the size (I maybe should’ve gone for the 38mm version, but I didn’t) or a bug where iMessage notifications still let the iPhone vibrate first before the notification hits the watch a few seconds later. And others like being uncomfortable wearing the watch even in light rain, although I’ve now seen multiple videos of people taking theirs swimming without any complications. Worst of all is probably the fact that I can check my watch for the current time, get sidetracked by a displayed upcoming event, put my wrist back down and forgot the time, something that’s already happening all the time on the phone.&lt;/p&gt;
+
+&lt;h3 id=&quot;to-conclude&quot;&gt;To conclude,&lt;/h3&gt;
+&lt;p&gt;I really like what Apple has built here. The Apple Watch is a fantastic little device that’s mostly fun to use and combines nicely with an iPhone for most of the time, but it gets into the way when it doesn’t. Some of the issues I have with the watch can probably be fixed by software updates and optimizations, but I’m already on the verge of developing an even worse case of battery paranoia every day which pushes me towards just not using the watch or even leaving it at home, so this device probably just isn’t for me. Being an earlier adopter was fun for the iPhone and iPad, but not for the watch. I’m excited for what’s to come and will probably buy a future version of this device. Let’s also see what Apple has planned for the watch at WWDC. &lt;em&gt;The epicenter of change&lt;/em&gt; has to be promising &lt;em&gt;something&lt;/em&gt; great.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I know you can if you’re really quiet, but come on. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;quoting John Siracusa in the &lt;a href=&quot;http://atp.fm/episodes/117&quot;&gt;most recent episode of ATP&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;I have &lt;em&gt;now playing&lt;/em&gt;, &lt;em&gt;weather&lt;/em&gt; and &lt;em&gt;calendar&lt;/em&gt; activated. I haven’t found a useful third party glance yet, although I’m not really looking either as third party watch apps are kept to a minimum for battery reasons. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;Ever heard of the &lt;a href=&quot;http://www.digitaltrends.com/mobile/phone-stack-restaurant-game-prevents-meal-time-interruptions-and-could-cost-you-a-lot-of-money/&quot;&gt;phone stack game&lt;/a&gt;? &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 17 May 2015 15:28:12 +0200</pubDate>
+        <link>http://blog.kilian.io/2015/05/17/why-ill-be-keeping-my-apple-watch.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2015/05/17/why-ill-be-keeping-my-apple-watch.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>ParkenDD</title>
+        <description>&lt;p&gt;A few months ago &lt;a href=&quot;http://codefor.de&quot;&gt;Code for Germany&lt;/a&gt; launched. An &lt;em&gt;OK Lab&lt;/em&gt; (&lt;em&gt;Open Knowledge Lab&lt;/em&gt;) was founded in Dresden soon after, although similar projects (&lt;a href=&quot;http://offenesdresden.de&quot;&gt;offenesdresden.de&lt;/a&gt;) were already in place. Everything merged and Dresden has had quite an active community interested in bringing Open Data to the next level. It’s awesome.&lt;/p&gt;
+
+&lt;p&gt;My first real contribution to this comes in form of an iPhone app using a &lt;a href=&quot;https://github.com/RobTranquillo/parkplaetzeDD&quot;&gt;PHP scraper backend&lt;/a&gt; scraping the data at &lt;a href=&quot;http://www.dresden.de/freie-parkplaetze/&quot;&gt;dresden.de/freie-parplaetze&lt;/a&gt;. An Android application for this purpose came to life fairly quickly (find it &lt;a href=&quot;http://jkliemann.de/parkendd/&quot;&gt;here&lt;/a&gt;), so a clone for iOS just had to follow!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/hoOODtZ.png&quot; alt=&quot;iphone screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It shows you whether a public parking lot is closed or not, how many spots are available and where it is on a map.
+It’s currently waiting for review and will hopefully be on the App Store within a few days. Definitely fun to build and I learned quite a bit more about developing for iOS. Future projects will be even better and more fun to build ;)&lt;/p&gt;
+
+&lt;p&gt;The source for this application is available on Github. See https://github.com/kiliankoe/parkendd.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Apple has just approved the first version of the app. It’s available here: https://itunes.apple.com/de/app/parkendd/id957165041&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Feb 2015 14:26:42 +0100</pubDate>
+        <link>http://blog.kilian.io/2015/02/26/parkendd.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2015/02/26/parkendd.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Migrating to kilian.io</title>
+        <description>&lt;p&gt;I spent most of today moving around my e-mail &lt;em&gt;infrastructure&lt;/em&gt;. The way I had it configured would probably bring tears to most people’s eyes, so I’ll spare you the gruesome details. Let’s just say that nothing is forwarding to Google Mail any longer and I’ll be using a different address as my main contact address from here on out. Namely &lt;strong&gt;me@kilian.io&lt;/strong&gt;. The domain kilian.io has been pointing to my server at &lt;a href=&quot;https://uberspace.de&quot;&gt;Uberspace&lt;/a&gt; for a little while now, but it hasn’t been much more than a little gimmick, just like &lt;a href=&quot;http://kilian.sexy&quot;&gt;kilian.sexy&lt;/a&gt; ;)
+I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carries more personality, more &lt;em&gt;me&lt;/em&gt; than just my last name. And since kilian@kilian.io just looks ridiculous I’m choosing to go with the very informal me@kilian.io instead.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;old&lt;/em&gt; domain koeltzs.ch isn’t going anywhere any time soon. I’ll probably be renewing it as well for the years to come, mails and redirects will still work. Transitioning basically my life’s worth of emails is no easy task either, but consider my Google Mail address officially deprecated from here on out.&lt;/p&gt;
+
+&lt;p&gt;I’ve also used this chance to deactivate the catchall for all my domains. Mail bounces aren’t necessarily a bad thing and this should also greatly help reduce the amount of spam that hits my mailserver day and night.&lt;/p&gt;
+
+&lt;p&gt;My PGP key has also been updated with the new address and I’ll soon be transitioning to me@kilian.io for some of my xmpp/jabber conversations as well. Even though my site already states this, that particular change will still take a bit.&lt;/p&gt;
+
+&lt;p&gt;I really do have to endorse &lt;a href=&quot;https://fastmail.com&quot;&gt;Fastmail.com&lt;/a&gt; somewhere throughout this post. Hosting my own mail server is something I definitely &lt;strong&gt;do not&lt;/strong&gt; want to do be doing.  I have a tendency not to trust software that I maintain myself (I know that sounds sad) and even more so when I don’t understand it all. So even though I’d be able to keep it running, I’m not sure it would be doing so safely or for a very long time. I’m trusting this one with people that make this their living. The recommendation for Fastmail comes from &lt;a href=&quot;http://marco.org&quot;&gt;Marco Arment&lt;/a&gt;. They’ve been around for a little while and are doing some &lt;a href=&quot;http://blog.fastmail.com/2014/12/23/jmap-a-better-way-to-email/&quot;&gt;really cool things&lt;/a&gt; as well, they definitely know what they’re doing and are doing it well. And I enjoy paying for something of use to me, highlighting the fact that I’m probably not the product here.&lt;/p&gt;
+
+&lt;p&gt;I’m definitely going to run into a few gotchas with this move, I’m sure of that. But I have to be doing this someday. So &lt;a href=&quot;http://longestjokeintheworld.com&quot;&gt;better nate than lever&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s actually been a lot of fun and the only thing to change now is the domain for this blog. Unfortunately I can’t run this under two domains simultaneously, so I’m going to be making this switch Monday evening (as in today, depending on how current this is when you read it). So if you’re one of the few people I know to be subscribed to the feed, please update it to check blog.kilian.io from now on. Thanks :)&lt;/p&gt;
+
+&lt;p&gt;Edit: Done :)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Jan 2015 14:25:41 +0100</pubDate>
+        <link>http://blog.kilian.io/2015/01/04/migrating-to-kilian-io.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2015/01/04/migrating-to-kilian-io.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>PyCharm and Java 8</title>
+        <description>&lt;p&gt;There’s been a &lt;a href=&quot;https://youtrack.jetbrains.com/issue/IDEA-131632&quot;&gt;bug&lt;/a&gt; with current versions of Jetbrains products (not just Pycharm, but also IntelliJ IDEA, Android Studio, AppCode and surely the others as well) on OS X 10.10 Yosemite where the editor screen flickers uncontrollably when you scroll the view. It’s been making my workflow increasingly difficult and was generally unpleasing, but there is a way around this!&lt;/p&gt;
+
+&lt;p&gt;Kudos goes to &lt;a href=&quot;http://justusadam.com&quot;&gt;Justus&lt;/a&gt; for pointing this one out.&lt;/p&gt;
+
+&lt;p&gt;All you have to do is set your favorite Jetbrains IDE to use the JVM version 1.8 instead of the default 1.6. This is easily done on OS X by editing the &lt;code&gt;Info.plist&lt;/code&gt; found at &lt;code&gt;/Applications/&amp;lt;PyCharm.app or something else&amp;gt;/Contents/Info.plist&lt;/code&gt; like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/MVsLBn3.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough this will also make your Darcula theme a little darker (very pretty) and the font rendering gets a lot better as well. Perfect fix!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Dec 2014 14:23:59 +0100</pubDate>
+        <link>http://blog.kilian.io/2014/12/19/pycharm-and-java-8.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/12/19/pycharm-and-java-8.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Simple Robot</title>
+        <description>&lt;p&gt;It’s been a while since I’ve touched Blender. A lot has changed, everything is awesome. There’s not all too much to say, but I’m a real sucker for pretty clay renders, so here’s a simple little robot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/j8gZjJa.jpg&quot; alt=&quot;clay render&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that this render is in 2400p, the native resolution of the new MacBook Pro. I didn’t want said device to go up in flames though, so a shoutout goes to &lt;a href=&quot;https://render.st&quot;&gt;render.st&lt;/a&gt; (and especially their signup bonus).&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;https://sketchfab.com/models/d560abac003249b293aed39a850dee72/embed&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; onmousewheel=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt;
+    &lt;a href=&quot;https://sketchfab.com/models/d560abac003249b293aed39a850dee72?utm_source=oembed&amp;amp;utm_medium=embed&amp;amp;utm_campaign=d560abac003249b293aed39a850dee72&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;Simple Robot&lt;/a&gt;
+    by &lt;a href=&quot;https://sketchfab.com/kiliankoe?utm_source=oembed&amp;amp;utm_medium=embed&amp;amp;utm_campaign=d560abac003249b293aed39a850dee72&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;kiliankoe&lt;/a&gt;
+    on &lt;a href=&quot;https://sketchfab.com?utm_source=oembed&amp;amp;utm_medium=embed&amp;amp;utm_campaign=d560abac003249b293aed39a850dee72&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;Sketchfab&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Fri, 31 Oct 2014 14:20:28 +0100</pubDate>
+        <link>http://blog.kilian.io/2014/10/31/simple-robot.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/10/31/simple-robot.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Installing OS X Applications Through Homebrew</title>
+        <description>&lt;p&gt;I have to admit to having been slightly jealous of a friend running Arch Linux on his laptop when he went ahead and installed &lt;a href=&quot;http://www.xmind.net/de/&quot;&gt;xmind&lt;/a&gt; right through his package manager (or actually &lt;a href=&quot;https://wiki.archlinux.org/index.php/yaourt&quot;&gt;yaourt&lt;/a&gt;, but I won’t make the distinction here). Now don’t get me wrong, there’s nothing wrong with installing applications on OS X. It’s dead simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oHxuD7K.png&quot; alt=&quot;drag&#39;n drop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You download the disk image, double-click it to mount and drag the .app onto your linked Applications directory. But it’s so graphical… Any self-respecting &lt;em&gt;appleleptic&lt;/em&gt; nowadays already has the fantastic &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt; package manager installed on their system anyways, which is awesome stuff, without question. And there is one package I have to admit to not having heard of before a few days ago, even though it has a rather big following which helps us out here.&lt;/p&gt;
+
+&lt;p&gt;It’s called &lt;a href=&quot;http://caskroom.io/&quot;&gt;Homebrew Cask&lt;/a&gt; (you just gotta love the naming scheme of things in the Homebrew universe: Brew, Cask, Formula, Tap, etc) and its sole purpose is allowing you to run commands like &lt;code&gt;brew cask install xmind&lt;/code&gt;. It worries about where to get the latest version from, where to put it, and for a few selected applications also how to specifically uninstall them when you run &lt;code&gt;brew cask uninstall app-name&lt;/code&gt;. It also doesn’t just do apps, but preference panes, quicklook plugins, services, widgets and a few more. It’s an allround powertool for installing stuff on your mac that homebrew itself doesn’t handle.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-how-do-you-get-it&quot;&gt;So how do you get it?&lt;/h3&gt;
+
+&lt;p&gt;Unfortunately cask isn’t included in main homebrew repo, but don’t despair, that just makes us run one more command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew tap caskroom/cask
+$ brew install brew-cask
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: You might find others online referencing to tap phinze/cask instead, which isn’t wrong, it’s just old. Fortunately GitHub redirects phinze/cask to caskroom/cask, but this might stop working one day, so just go with caskroom/cask and you won’t have to worry.&lt;/p&gt;
+
+&lt;p&gt;Cask is now installed on your system. It’s main working directory is &lt;code&gt;/usr/local/Library/Taps/caskroom/homebrew-cask&lt;/code&gt;. This is where the git repo resides, which is one of the most awesome facts about homebrew by the way. All of it being just a bunch of ruby scripts and a git repo to manage them. You don’t actually need to do anything in this directory though, unless you want to add your own casks, which we’ll go over how to do in a sec.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-cask&quot;&gt;Using cask&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask update
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is basically an alias to &lt;code&gt;git pull origin master&lt;/code&gt; in the cask repo and updates your list of available casks to the current status. Running this often is key, as new casks are created and others are updated on a daily basis. Run this if you can’t find a cask or before installing one if you haven’t updated in a little why to ensure you get the newest version of an application.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask search app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Want to know if an app you’re looking to install is available through cask? Just run this. The naming strategy is pretty straight forward with everything being lowercase and dashes for spaces. Search also finds partial results, so for example this works:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;shell
+kilian@Apollo:~$ brew cask search intellij
+==&amp;gt; Partial matches
+intellij-idea	    intellij-idea-ce
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask install app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Installs an app. Simple. It also automatically runs through any zip files, disk images or packages. It’ll prompt you if an admin password is needed.
+One thing to note is that applications are by default &lt;em&gt;not&lt;/em&gt; installed to &lt;code&gt;/Applications&lt;/code&gt;, but to &lt;code&gt;/opt/homebrew-cask/Caskroom/app-name/version/app-name.app&lt;/code&gt; and then symlinked to &lt;code&gt;~/Applications&lt;/code&gt;. This is no problem for your mac, but in case you’d like to link it to &lt;code&gt;/Applications&lt;/code&gt; instead, run the command like this &lt;code&gt;brew cask install app-name --appdir=/Applications&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask uninstall app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This should be about as self-explanatory as it gets. As I mentioned already however this doesn’t just remove the application from your system, but for a few special apps that require their own uninstaller to be run, this is done instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask list
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lists all your installed casks. If you run it together with an application name it’ll tell you which files are installed and where they reside.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask cleanup
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cleans up downloaded files which are usually not removed after installing an application. Might free you up quite a bit of space on your harddrive.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask home app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Takes you to the homepage of an application. Be it the developer’s site, a GitHub repo or whatnot.&lt;/p&gt;
+
+&lt;p&gt;And last but not least, an essential one if you’re an &lt;a href=&quot;http://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt;-junkie like me:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask alfred link
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This adds the install directory to Alfred’s search path so you can find your installed applications with Alfred.&lt;/p&gt;
+
+&lt;p&gt;That’s actually all there is to using cask. It’s a fantastic little application and the list of applications it can install is &lt;a href=&quot;https://github.com/caskroom/homebrew-cask/tree/master/Casks&quot;&gt;pretty damn huge&lt;/a&gt; (1.723 entries as of now).&lt;/p&gt;
+
+&lt;p&gt;There are however two other points I’d like to go over.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-brewfiles&quot;&gt;Using Brewfiles&lt;/h3&gt;
+
+&lt;p&gt;Homebrew includes the wonderful functionality of being able to run a number of commands from a file you specify. This is typically called a Brewfile, but you can name it whatever you want.&lt;/p&gt;
+
+&lt;p&gt;This of course finds it main purpose in installing a few packages together and &lt;em&gt;bundle&lt;/em&gt; them together.&lt;/p&gt;
+
+&lt;p&gt;Using this is extremely simple, here’s a &lt;a href=&quot;https://github.com/kiliankoe/dotfiles/blob/master/Brewfile&quot;&gt;Brewfile&lt;/a&gt; I set up so I can quickly install all the applications I use regularly on my system if I have to start from scratch (new machine, dead harddrive or ritual cleansing, who knows).&lt;/p&gt;
+
+&lt;p&gt;As you can see it just includes a command on each line without the &lt;code&gt;brew&lt;/code&gt; command itself.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+...
+install node
+install ffmpeg
+...
+# set up brew cask
+tap caskroom/cask
+install brew-cask
+...
+# cleanup
+cask alfred link
+cleanup
+cask cleanup
+...
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lines starting with a &lt;code&gt;#&lt;/code&gt; are comments and will be ignored by homebrew.&lt;/p&gt;
+
+&lt;p&gt;Use the command &lt;code&gt;brew bundle filename&lt;/code&gt; to let brew run through it. Already installed packages and applications will not be overwritten.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-your-own-casks&quot;&gt;Creating your own casks&lt;/h3&gt;
+
+&lt;p&gt;So you found something that’s not yet available through cask and want to become one of the 743 current contributors? That’s awesome! And it’s really quite simple as well. All you need is some basic knowledge how to use git and you’re set. Let’s take a look.&lt;/p&gt;
+
+&lt;p&gt;Let’s start by setting up your fork on GitHub. Visit the &lt;a href=&quot;https://github.com/caskroom/homebrew-cask&quot;&gt;official repo&lt;/a&gt; of cask on GitHub and click on the fork button in the upper right-hand corner. Wait a few seconds and GitHub will create a clone of the repo under your account. We’ll use this to change what we want and send a pull request back to main repo.&lt;/p&gt;
+
+&lt;p&gt;Now open up a terminal and navigate to the cask repo on your harddrive.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ cd /usr/local/Library/Taps/caskroom/homebrew-cask
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s branch off into a feature branch to add the new cask.
+&lt;code&gt;
+$ git branch add-app-name
+$ git checkout add-app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can create the cask by running&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ brew cask create app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Please check the &lt;a href=&quot;https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#cask-naming-details&quot;&gt;naming details&lt;/a&gt; before naming your cask. The rest of the contributing guide contains all the following details as well, but I’m going to go through them anyways.&lt;/p&gt;
+
+&lt;p&gt;This should immediately open up your default editor where you can go ahead and fill out the details like version number, &lt;a href=&quot;http://notepad2.blogspot.de/2012/07/mac-os-x-how-to-generate-md5-sha1.html&quot;&gt;hash&lt;/a&gt; of the download, link to the download, homepage and name of the to be linked file. After saving this you can already go ahead and try it out by installing it yourself. Use &lt;code&gt;brew cask edit app-name&lt;/code&gt; to quickly jump back to editing the file again. If you’re sure everything works also run &lt;code&gt;brew cask audit app-name --download&lt;/code&gt; for some additional checks.&lt;/p&gt;
+
+&lt;p&gt;Time to commit. Add your cask and commit it with a sensible message containing the name and version number.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git add Casks/app-name.rb
+$ git commit -m &#39;Add app-name v0.1&#39;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now let’s add our fork as a remote so we can push the changes to GitHub with one of the following two commands depending on if you interact with GitHub over SSH (second command) or not (first one).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git remote add fork https://github.com/your-username/homebrew-cask.git
+$ git remote add fork git@github.com:your-username/homebrew-cask.git
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And push it.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git push fork add-app-name -u
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can now visit the &lt;a href=&quot;https://github.com/caskroom/homebrew-cask&quot;&gt;main cask repo&lt;/a&gt; where a green button to submit your pull request should be greeting you. Click that, check the changed files just to be sure you did what you wanted and submit it. The repo is very active and presuming everything is awesome it shouldn’t be long for it to be merged.&lt;/p&gt;
+
+&lt;p&gt;Just don’t forget to switch back to the master branch in your local cask repo, otherwise you won’t be getting future updates ;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git checkout master
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also delete your local feature branch if everything is done.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ git branch -d add-app-name
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You’re now officially a contributer to cask, awesome stuff.&lt;/p&gt;
+
+&lt;p&gt;This also concludes this post. I hope it was interesting enough and you find cask to be just as useful as many others and I do.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Jul 2014 15:19:09 +0200</pubDate>
+        <link>http://blog.kilian.io/2014/07/21/installing-os-x-applications-through-homebrew.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/07/21/installing-os-x-applications-through-homebrew.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>This Is Getting Ridiculous</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/StbQbJN.jpg&quot; alt=&quot;parts stolen from my bike&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;November 29th, 2012: Left a math lecture on a rainy day and wanted to get home as quick as possible. But it looked like I would be carrying my bike home seeing how some douche had stolen my front wheel on campus. Seeing how I moved to Dresden with &lt;em&gt;quick release skewers&lt;/em&gt; (if I can trust dict.leo.org) however, this happening was just a matter of time.
+Instead of directly buying a new wheel (and new brakes, thank you, asshole! Oh, and a &lt;a href=&quot;http://www.pitlock.de/&quot;&gt;Pitlock&lt;/a&gt; system) I went with a completely new (as in old) and cheap bicycle. Fast forward to January and a few stitches on my face, and I wanted to go back to riding &lt;em&gt;my&lt;/em&gt; bike.
+&lt;strong&gt;Total cost: ~200 €&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;December 16th, 2013: Right in front of my window, where my bike is usually locked up, some asshat stole my handlebar. At least he/she had the decency of not cutting anything off, but taking their time to nicely remove my brakes and gear levers without damaging anything. It still took me a while to fix this, seeing how winter came. And I had bought the wrong handlebars as a replacement as well. But I finally fixed it… on April 16th.
+&lt;strong&gt;Total cost: ~30 €&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;April 21st, 2014: I was able to ride my bike to university once. ONCE! Just once, before wanting to do the same again today. But no, my rear gear shift was completely missing and the chain was cut. This is just perfect. The bike was again locked up right outside my window, but I noticed nothing. I love the people around here…
+&lt;strong&gt;Total cost this time: 200 €… Well crap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Update January 2015: One more theft in the meantime and brakes missing tonight. Both times from inside the locked bicycle room in my basement. Yay (┛ò__ó)┛彡┻━┻&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Apr 2014 15:17:11 +0200</pubDate>
+        <link>http://blog.kilian.io/2014/04/21/this-is-getting-ridiculous.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/04/21/this-is-getting-ridiculous.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Optimizing My Life - Part One: Decluttering</title>
+        <description>&lt;p&gt;Optimizing every single aspect of my digital live is something I’ve been enjoying for years. It’s the little things, being able to define a new shortcut for a task that I do all day, streamlining a complex process that has had me looking up howtos everytime I had to do it, but the same has never really held true for my life away from the keyboard. I’m definitely not what you would call messy, but the organization of my desk, room or now my apartment has never been one of my strengths. I now aim to change all of that. And there’s several steps I’m taking to get there.&lt;/p&gt;
+
+&lt;p&gt;So, let’s start with something that I’ve already started doing recently, living paperless.&lt;/p&gt;
+
+&lt;p&gt;Pretty much everything I receive via snail mail (minus the spam) is scanned and digitally filed away in the software &lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt;. Evernote is not perfect, but once you manage to adjust it to your needs, it almost feels right. Additionally your stuff becomes searchable, also from mobile, which actually is a huge plus!
+After scanning, if it’s something I actually need to keep (mostly for legal reasons - which is surprisingly little by the way), it’s put onto the top of a pile living inside of a box. This pile is something I will probably never look through again, but it’s obviously sorted chronologically, so I would theoretically be able to find something should I ever need to do so.
+Everything else? Trash it. Might seem harsh, but there’s no reason to keep it around and all it does is bog you down.&lt;/p&gt;
+
+&lt;p&gt;I’ve been following this routine for only about two weeks now, but it’s already made a difference. I’ve actually run into a few situations where I need some kind of information about previous employments or bank statements, which are found within seconds in the digital archive.&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;As a sidenote: If you’re not a fan of Evernote, make sure to take a very close look at the other software (if any) you’re choosing for the job. I actually went through a few, and pretty much every other way has shortcomings that will ruin your fun. I’m not going to directly mention anyone, but I’d gladly give advice to anyone willing to contact me directly.&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;However, living paperless is just one aspect, there’s a lot more junk lying around that you never really need.&lt;/p&gt;
+
+&lt;p&gt;Something that seems to pile up quite a bit over the years without ever becoming less are clothes. And if you’re someone like me, this applies especially to T-Shirts. You get them for &lt;em&gt;everything&lt;/em&gt; and from &lt;em&gt;anywhere&lt;/em&gt;. But are you really going to wear that one shirt you got from that one fair three years ago? No. Give it away. Keep the memory, it’s worth more.&lt;/p&gt;
+
+&lt;p&gt;What about digital media? In the times of Spotify and Netflix (or similar services all across the globe), is there really any need at all to keep physical collections of music, movies and TV series? Nope, not at all. Sell ‘em.&lt;/p&gt;
+
+&lt;p&gt;Same goes for books actually. Now I’m a huge fan of ebooks, but that doesn’t go for everybody. There’s something about books however (actually, not just books) that makes us want to own them. Especially the good stuff, which is kind of obvious. I don’t know if it’s about showing off what you like at home or something else, but it’s definitely not necessary. Borrowing books from friends or the library is just as good. Or sell yours off on Amazon, share the love of a good book. &lt;em&gt;Never&lt;/em&gt; throw away a book though, there’s a special place in hell reserved for people who trash books.&lt;/p&gt;
+
+&lt;p&gt;Another big one is all of that stuff that belongs to your &lt;em&gt;fantasy self&lt;/em&gt;, you know, that version of you touring the globe and living your dreams. Either actually go ahead and pursue those dreams or rid yourself of that stuff. And don’t worry, everybody’s got those unrealistic views of themselves.&lt;/p&gt;
+
+&lt;p&gt;Use this mentality and tour around your room, apartment, house or whatever and sort out the stuff you don’t need. None of that &lt;em&gt;but maybe someday…&lt;/em&gt; bullshit. If you don’t need it, out it goes. Anything else can be bought, rented or borrowed when you actually do need it.&lt;/p&gt;
+
+&lt;!-- #### The Digital Stuff
+
+Yeah... It&#39;s not just the analog world. I spend a huge amount of my time in front of a screen and the digital world is just as important to me as the analog counterpart, but here I want to just quickly mention two small areas that have caught my eye especially.
+
+The two big problematic areas of my digital life are my downloads directory and my browser bookmarks. I&#39;ve been using my bookmarks as a read-later list for years now, but I might as well just have been piping them directly into /dev/null. If that sounds like you, give up the idea of saving something for later. Read it now, or close that tab. You might just as well clean out your RSS feeds as well, looking at it from that angle, it might not have been bad that Google Reader shut down.
+
+For that ever-growing downloads directory, which is more of a tmp directory for everything, I&#39;ve had a lot of success with using a software called [Hazel](http://www.noodlesoft.com/hazel.php) to delete everything that&#39;s been there for over seven days. If you actually shut down your computer, a @reboot cronjob doing the same might work for you, just be sure to don&#39;t put anything vital into that directory. --&gt;
+
+&lt;p&gt;All of this is super simple stuff, you just actually have to do it. I’ve found some immense fun in playing through the idea of fitting my entire life into a single suitcase. And even though I still can’t manage something that extreme, I’m keeping that thought in my head and applying it to the things around me. It changes how I think about my belongings immensely.&lt;/p&gt;
+
+&lt;p&gt;If you’re intrigued in any way, go ahead and see if this works out for you as well.&lt;/p&gt;
+
+&lt;p&gt;I’ll see about heading towards part two of this series soon. This was just the beginning.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Feb 2014 14:15:29 +0100</pubDate>
+        <link>http://blog.kilian.io/2014/02/21/optimizing-my-life-part-one-decluttering.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/02/21/optimizing-my-life-part-one-decluttering.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>A New Start</title>
+        <description>&lt;p&gt;&lt;strong&gt;UPDATE 2015-08-04&lt;/strong&gt;: Kinda ironic moving back to Octopress now, isn’t it? But Octopress 3.0 is looking so &lt;em&gt;niiiiiiceee&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;(Making the &lt;em&gt;Arrested Development&lt;/em&gt; reference in the title there was damn tempting, but nope, didn’t go for it.)&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m not a huge blogger, I know that. I’ve been installing and running away from I guess around 10 to 20 blogs in the last few years (I can at least find &lt;a href=&quot;http://completelyfocused.wordpress.com&quot;&gt;one&lt;/a&gt; of the remnants to still be online, probably due to the fact that this is the only instance I didn’t host myself) and have had a lot more fun playing around with the software itself than writing, although I always aim to change that.
+I guess I could write a few sentences about why I think this time might be different, but I’ve written those over and over again as well. But what I do know is that at least the software is different this time. It’s not just another Wordpress installation, it’s &lt;a href=&quot;http://ghost.org&quot;&gt;Ghost&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s a few things pushing me towards using Ghost as a blogging platform. It has to be something free and open, something I could host myself, something without a lot of bullshit that comes with it (sorry Wordpress and every other CMS out there), something that supports markdown, something that is managed over a browser (sorry Octopress&lt;sup&gt;1&lt;/sup&gt;), something that doesn’t push me towards writing novels for everything (sorry Medium (yeah I know, not really a blog… (and yes, nested parentheses!))), something that is still customizeable (sorry, Svtble) and as an added bonus, something that’s built on top of Node.js.&lt;/p&gt;
+
+&lt;p&gt;Ghost is a perfect fit. The minimality (if that is a word) of it just makes me happy on a level that I can’t yet really appreciate fully. But I will, I’m sure of that. The one thing I’m not entirely sure about yet however is if I’m going to be hosting it on ghost.org or myself. Here it’s stable and will be kept updated even if I forget, but it costs money. Well, it’s going to cost me money in every case, I’ll just run through the 30 day trial and make up an opinion on the go I guess.&lt;/p&gt;
+
+&lt;p&gt;So much for now, here goes nothing!&lt;/p&gt;
+
+&lt;p&gt;P.S. One downside are the missing comments. But everything is open source, so it shouldn’t be much of an issue forking the default theme on Github and adding Disqus. I’ll keep that in mind for the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; My main computer just died and while it’s in the Apple Store being fixed for a ridiculous amount of money, pushing new content to my Octopress running inside a Github repo is more of a hassle than anything else. Getting my SSH key out of my backup for starters and then installing Ruby/rake? No thanks.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Feb 2014 14:11:57 +0100</pubDate>
+        <link>http://blog.kilian.io/2014/02/15/a-new-start.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2014/02/15/a-new-start.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Valentina Kalashnikova - Last Dangerous Racoons</title>
+        <description>&lt;p&gt;Just got back from an awesome gig from a small local band a friend of mine plays in. They’re called the &lt;em&gt;Last Dangerous Racoons&lt;/em&gt; and this title of theirs is definitely worth a listen!&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/43418321&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also check out their &lt;a href=&quot;http://lastdangerousracoons.de&quot;&gt;site&lt;/a&gt; and &lt;a href=&quot;http://lastdangerousracoons.bandcamp.com/&quot;&gt;bandcamp&lt;/a&gt; if you’re interested.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Nov 2013 14:10:37 +0100</pubDate>
+        <link>http://blog.kilian.io/2013/11/07/valentina-kalashnikova-last-dangerous-racoons.html</link>
+        <guid isPermaLink="true">http://blog.kilian.io/2013/11/07/valentina-kalashnikova-last-dangerous-racoons.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
