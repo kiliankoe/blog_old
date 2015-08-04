@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact</title>
+  <title>ParkAPI</title>
   <meta name="description" content="Kilian's blog 'n stuff. Sounds about right.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://blog.kilian.io/contact/">
+  <link rel="canonical" href="http://blog.kilian.io/projects/parkapi.html">
   <link rel="alternate" type="application/rss+xml" title="trial and error" href="http://blog.kilian.io/feed.xml" />
 </head>
 
@@ -66,21 +66,22 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Contact</h1>
+    <h1 class="post-title">ParkAPI</h1>
   </header>
 
   <article class="post-content">
-    <p>There’s a few ways you can contact me, choose from the following:</p>
+    <p>A python-powered backend for the app <a href="/projects/parkendd.html">ParkenDD</a>.</p>
 
-<ul>
-  <li>Twitter: <a href="https://twitter.com/kiliankoe">@kiliankoe</a></li>
-  <li>E-Mail: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#101;&#064;&#107;&#105;&#108;&#105;&#097;&#110;&#046;&#105;&#111;">&#109;&#101;&#064;&#107;&#105;&#108;&#105;&#097;&#110;&#046;&#105;&#111;</a> (PGP: 0x24D7C6B4)</li>
-  <li>Jabber/XMPP: <a href="xmpp:me@kilian.io">me@kilian.io</a></li>
-  <li>iMessage: me@kilian.io</li>
-  <li>Facebook: <a href="https://www.facebook.com/kilian.koeltzsch">kilian.koeltzsch</a></li>
-</ul>
+<p><img src="https://github.com/offenesdresden/ParkAPI/raw/master/image.jpg" alt="image" /></p>
 
-<p>Or any other way that you might find ✌🏼</p>
+<p>The code is of course fully open-sourced on <a href="https://github.com/offenesdresden/ParkAPI">GitHub</a> and licensed under the MIT license.</p>
+
+<p>Check out the README in the repo for additional info on how to use the API, adding support for a new city or deploying it yourself.</p>
+
+<p>This project was born out of the need for new infrastructure behind our ParkenDD apps. The old idea was hacked together quickly and resulted in dresden.de being scraped every time someone opens or refreshes the app. Yeah. Not cool.
+ParkAPI now scrapes the pages every few minutes automatically and saves the data in a local database that is then served to anyone requesting it. This not only allows us to work with this data much more efficiently, but also led to the development of a spec that we have used to fit much more cities and support data from them as well. As long as there are people willing to periodically update the scrapers when the format of the source pages changes, we’ll be serving current parking lot data to the apps for multiple cities.</p>
+
+<p>There have also been some very interesting steps towards using the data gathered over several months to develop predictions on when how many free spaces will be available. This is something that wasn’t possible or available before.</p>
 
   </article>
 
