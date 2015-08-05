@@ -11,7 +11,7 @@ I have previously [blogged](/2015/02/26/parkendd.html) about the very first vers
 
 There's also an [Android version](http://jkliemann.de/parkendd/) and a version for Windows Phone is currently in development.
 
-As seen in the [Sächsische Zeitung](http://www.sz-online.de/nachrichten/studenten-helfen-bei-der-parkplatzsuche-3128007.html), the [Morgen Post](https://mopo24.de/nachrichten/dresden-kilian-keoltzsch-parken-dd-app-6754) and the [Ad Rem](http://apps.ad-rem.de/epaper/DMV_ADD_20150715_gesamt.pdf) (page 12) amongst others.
+As seen in the [Sächsische Zeitung](http://www.sz-online.de/nachrichten/studenten-helfen-bei-der-parkplatzsuche-3128007.html), the [Morgenpost](https://mopo24.de/nachrichten/dresden-kilian-keoltzsch-parken-dd-app-6754) and the [Ad Rem](http://apps.ad-rem.de/epaper/DMV_ADD_20150715_gesamt.pdf) (page 12) amongst others.
 
 The source is available completely on [GitHub](https://github.com/kiliankoe/parkendd) and licensed under the MIT license.
 
