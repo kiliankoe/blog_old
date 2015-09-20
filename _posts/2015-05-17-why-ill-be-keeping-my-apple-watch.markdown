@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I'll Be Keeping My Apple Watch"
+permalink: "applewatch"
 date: 2015-05-17T15:28:12+02:00
 ---
 

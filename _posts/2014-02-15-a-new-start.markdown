@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A New Start"
+permalink: "anustart"
 date: 2014-02-15T15:11:57+02:00
 ---
 

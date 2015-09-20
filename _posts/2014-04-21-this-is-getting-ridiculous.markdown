@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "This Is Getting Ridiculous"
+permalink: "bikethievery"
 date: 2014-04-21T15:17:11+02:00
 ---
 

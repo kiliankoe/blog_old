@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Optimizing My Life - Part One: Decluttering"
+permalink: "decluttering"
 date: 2014-02-21T15:15:29+02:00
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Simple Robot"
+permalink: "simplerobot"
 date: 2014-10-31T15:20:28+02:00
 ---
 

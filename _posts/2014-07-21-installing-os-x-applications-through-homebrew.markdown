@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Installing OS X Applications Through Homebrew"
+permalink: "homebrewcask"
 date: 2014-07-21T15:19:09+02:00
 ---
 

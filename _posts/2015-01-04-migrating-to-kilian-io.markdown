@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Migrating to kilian.io"
+permalink: "kilianio"
 date: 2015-01-04T15:25:41+02:00
 ---
 

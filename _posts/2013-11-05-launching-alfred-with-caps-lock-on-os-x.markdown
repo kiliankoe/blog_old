@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Launching Alfred With Caps Lock on OS X"
+permalink: "alfredcapslock"
 date: 2013-11-05T15:09:21+02:00
 ---
 
