@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Migrating to kilian.io</title>
-  <meta name="description" content="I spent most of today moving around my e-mail infrastructure. The way I had it configured would probably bring tears to most people’s eyes, so I’ll spare you...">
+  <title>Launching Alfred With Caps Lock on OS X</title>
+  <meta name="description" content="In great contrast to Alfred being one of those apps I love more than anything on OS X, the caps lock key is something utterly useless nowadays (or ever for t...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://blog.kilian.io/2015/01/04/migrating-to-kilian-io.html">
+  <link rel="canonical" href="http://blog.kilian.io/alfredcapslock">
   <link rel="alternate" type="application/rss+xml" title="trial and error" href="http://blog.kilian.io/feed.xml" />
 </head>
 
@@ -65,27 +65,49 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Migrating to kilian.io</h1>
-    <p class="post-meta">Jan 4, 2015</p>
+    <h1 class="post-title">Launching Alfred With Caps Lock on OS X</h1>
+    <p class="post-meta">Nov 5, 2013</p>
   </header>
 
   <article class="post-content">
-    <p>I spent most of today moving around my e-mail <em>infrastructure</em>. The way I had it configured would probably bring tears to most people’s eyes, so I’ll spare you the gruesome details. Let’s just say that nothing is forwarding to Google Mail any longer and I’ll be using a different address as my main contact address from here on out. Namely <strong>me@kilian.io</strong>. The domain kilian.io has been pointing to my server at <a href="https://uberspace.de">Uberspace</a> for a little while now, but it hasn’t been much more than a little gimmick, just like <a href="http://kilian.sexy">kilian.sexy</a> ;)
-I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carries more personality, more <em>me</em> than just my last name. And since kilian@kilian.io just looks ridiculous I’m choosing to go with the very informal me@kilian.io instead.</p>
+    <p>In great contrast to <a href="http://www.alfredapp.com/">Alfred</a> being one of those apps I love more than anything on OS X, the caps lock key is something utterly useless nowadays (or ever for that matter). And if you do happen to find yourself in an argument on the internet, even <a href="http://www.youtube.com/watch?v=xznylVUyND0">Homer Simpson agrees</a> that you put a lot more weight into your statement if you take your time to press the shift key. The already mentioned Alfred however is so immensely useful, that even two keys for its hotkey (the default <code>alt</code> + <code>space</code>) is too much. So why not combine the two and have a dedicated <em>launch everything and search for stuff anywhere</em> key on your keyboard?</p>
 
-<p>The <em>old</em> domain koeltzs.ch isn’t going anywhere any time soon. I’ll probably be renewing it as well for the years to come, mails and redirects will still work. Transitioning basically my life’s worth of emails is no easy task either, but consider my Google Mail address officially deprecated from here on out.</p>
+<p>So let’s go ahead and set that up.</p>
 
-<p>I’ve also used this chance to deactivate the catchall for all my domains. Mail bounces aren’t necessarily a bad thing and this should also greatly help reduce the amount of spam that hits my mailserver day and night.</p>
+<h3 id="step-1---install-seil">Step 1 - Install Seil</h3>
 
-<p>My PGP key has also been updated with the new address and I’ll soon be transitioning to me@kilian.io for some of my xmpp/jabber conversations as well. Even though my site already states this, that particular change will still take a bit.</p>
+<p>The very cool Takayama Fumihiko (<a href="https://twitter.com/tekezo">@tekezo</a>) wrote a great little tool dedicated to changing the behavior of the caps lock key (and some others for that matter) on Macs. Check out his site and <a href="https://pqrs.org/osx/karabiner/seil.html.en">download it</a>. And yes, this app works just fine with OS X 10.9 Mavericks and should also already support 10.10 Yosemite. Note: Before a few versions ago Seil was known as PCKeyboardHack.</p>
 
-<p>I really do have to endorse <a href="https://fastmail.com">Fastmail.com</a> somewhere throughout this post. Hosting my own mail server is something I definitely <strong>do not</strong> want to do be doing.  I have a tendency not to trust software that I maintain myself (I know that sounds sad) and even more so when I don’t understand it all. So even though I’d be able to keep it running, I’m not sure it would be doing so safely or for a very long time. I’m trusting this one with people that make this their living. The recommendation for Fastmail comes from <a href="http://marco.org">Marco Arment</a>. They’ve been around for a little while and are doing some <a href="http://blog.fastmail.com/2014/12/23/jmap-a-better-way-to-email/">really cool things</a> as well, they definitely know what they’re doing and are doing it well. And I enjoy paying for something of use to me, highlighting the fact that I’m probably not the product here.</p>
+<h3 id="step-2---getting-the-relevant-key-code">Step 2 - Getting the relevant key code</h3>
 
-<p>I’m definitely going to run into a few gotchas with this move, I’m sure of that. But I have to be doing this someday. So <a href="http://longestjokeintheworld.com">better nate than lever</a>.</p>
+<p>You could waste some time looking up the key code for the caps lock key, or you could download this nifty <a href="http://manytricks.com/keycodes/">little app</a> to check it quickly.</p>
 
-<p>It’s actually been a lot of fun and the only thing to change now is the domain for this blog. Unfortunately I can’t run this under two domains simultaneously, so I’m going to be making this switch Monday evening (as in today, depending on how current this is when you read it). So if you’re one of the few people I know to be subscribed to the feed, please update it to check blog.kilian.io from now on. Thanks :)</p>
+<p>For me it was <strong>103</strong>, but I don’t want to guarantee that it’ll be the same for you.</p>
 
-<p>Edit: Done :)</p>
+<h3 id="step-3---mapping-the-functionality">Step 3 - Mapping the functionality</h3>
+
+<p>Unfortunately the caps lock key is a bit special. It isn’t really registered by the system as a normal key like pretty much anything else, so we’re going to have to map it to something. The F-keys on your keyboard are pretty useful for that, so just choose one of those, as long as you’re not using it for anything else. It doesn’t matter if it’s a media key, if no function on your machine is set to happen when you press <code>fn</code> + <code>FX</code> (I’m using <code>F11</code>), this would work.</p>
+
+<p>If you’re not sure about this, check your System Preferences &gt; Keyboard &gt; Keyboard Shortcuts. Any functionality would be listed there.</p>
+
+<p>Open Key Codes, hold <code>fn</code> if necessary and press your key. Aside from all the other information that should now be displayed, remember the key code.</p>
+
+<p>Now open up PCKeyboardHack, check the <em>Change Caps Lock</em> option and set it to the key code we just looked up.</p>
+
+<h3 id="step-4---alfred">Step 4 - Alfred</h3>
+
+<p>All that’s left is changing Alfred’s preferences. In the General tab, you’ll see the Alfred Hotkey option. Set this to the F-key you chose earlier, remember to hold <code>fn</code> if you’re on an Apple keyboard.</p>
+
+<h3 id="step-5---disable-caps-lock">Step 5 - Disable caps lock</h3>
+
+<p>This step really isn’t necessary for this to already be working, try it out!</p>
+
+<p>Something that seemed to be bothering me, is that Macs have a built-in feature to protect you from accidentally activating caps lock in every day use. This is a short delay when activating it (not deactivating, just activating), so when you press the key fast enough, nothing will happen. The only way to get around this is disabling caps lock itself, but that’s not really a problem since we’re not using it for its actual function anyways.</p>
+
+<p>The option for this is in the System Preferences &gt; Keyboard &gt; Modifier Keys. Set caps lock to <em>No Action</em> here. That should do the trick. And now have fun!</p>
+
+<p>By the way:
+the famous <a href="http://en.wikipedia.org/wiki/Chromebook">CR-48 Chromebooks</a> also had a dedicated search key instead of caps lock. I was jealous from the start, but this fixed it :)</p>
 
   </article>
 
