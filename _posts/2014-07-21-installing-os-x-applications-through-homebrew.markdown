@@ -18,10 +18,10 @@ It's called [Homebrew Cask](http://caskroom.io/) (you just gotta love the naming
 
 Unfortunately cask isn't included in main homebrew repo, but don't despair, that just makes us run one more command.
 
-```
+{% highlight sh %}
 $ brew tap caskroom/cask
 $ brew install brew-cask
-```
+{% endhighlight %}
 
 Note: You might find others online referencing to tap phinze/cask instead, which isn't wrong, it's just old. Fortunately GitHub redirects phinze/cask to caskroom/cask, but this might stop working one day, so just go with caskroom/cask and you won't have to worry.
 
@@ -29,60 +29,61 @@ Cask is now installed on your system. It's main working directory is `/usr/local
 
 ### Using cask
 
-```
+First thing you should do is update cask:
+{% highlight sh %}
 $ brew cask update
-```
+{% endhighlight %}
 
 This is basically an alias to `git pull origin master` in the cask repo and updates your list of available casks to the current status. Running this often is key, as new casks are created and others are updated on a daily basis. Run this if you can't find a cask or before installing one if you haven't updated in a little why to ensure you get the newest version of an application.
 
-```
+{% highlight sh %}
 $ brew cask search app-name
-```
+{% endhighlight %}
 
 Want to know if an app you're looking to install is available through cask? Just run this. The naming strategy is pretty straight forward with everything being lowercase and dashes for spaces. Search also finds partial results, so for example this works:
 
-```shell
+{% highlight sh %}
 kilian@Apollo:~$ brew cask search intellij
 ==> Partial matches
 intellij-idea	    intellij-idea-ce
-```
+{% endhighlight %}
 
-```
+{% highlight sh %}
 $ brew cask install app-name
-```
+{% endhighlight %}
 
 Installs an app. Simple. It also automatically runs through any zip files, disk images or packages. It'll prompt you if an admin password is needed.
 One thing to note is that applications are by default *not* installed to `/Applications`, but to `/opt/homebrew-cask/Caskroom/app-name/version/app-name.app` and then symlinked to `~/Applications`. This is no problem for your mac, but in case you'd like to link it to `/Applications` instead, run the command like this `brew cask install app-name --appdir=/Applications`.
 
-```
+{% highlight sh %}
 $ brew cask uninstall app-name
-```
+{% endhighlight %}
 
 This should be about as self-explanatory as it gets. As I mentioned already however this doesn't just remove the application from your system, but for a few special apps that require their own uninstaller to be run, this is done instead.
 
-```
+{% highlight sh %}
 $ brew cask list
-```
+{% endhighlight %}
 
 Lists all your installed casks. If you run it together with an application name it'll tell you which files are installed and where they reside.
 
-```
+{% highlight sh %}
 $ brew cask cleanup
-```
+{% endhighlight %}
 
 Cleans up downloaded files which are usually not removed after installing an application. Might free you up quite a bit of space on your harddrive.
 
-```
+{% highlight sh %}
 $ brew cask home app-name
-```
+{% endhighlight %}
 
 Takes you to the homepage of an application. Be it the developer's site, a GitHub repo or whatnot.
 
 And last but not least, an essential one if you're an [Alfred](http://www.alfredapp.com/)-junkie like me:
 
-```
+{% highlight sh %}
 $ brew cask alfred link
-```
+{% endhighlight %}
 
 This adds the install directory to Alfred's search path so you can find your installed applications with Alfred.
 
@@ -100,7 +101,7 @@ Using this is extremely simple, here's a [Brewfile](https://github.com/kiliankoe
 
 As you can see it just includes a command on each line without the `brew` command itself.
 
-```
+{% highlight sh %}
 ...
 install node
 install ffmpeg
@@ -114,7 +115,7 @@ cask alfred link
 cleanup
 cask cleanup
 ...
-```
+{% endhighlight %}
 
 Lines starting with a `#` are comments and will be ignored by homebrew.
 
@@ -128,21 +129,21 @@ Let's start by setting up your fork on GitHub. Visit the [official repo](https:/
 
 Now open up a terminal and navigate to the cask repo on your harddrive.
 
-```
+{% highlight sh %}
 $ cd /usr/local/Library/Taps/caskroom/homebrew-cask
-```
+{% endhighlight %}
 
 Let's branch off into a feature branch to add the new cask.
-```
+{% highlight sh %}
 $ git branch add-app-name
 $ git checkout add-app-name
-```
+{% endhighlight %}
 
 Now we can create the cask by running
 
-```
+{% highlight sh %}
 $ brew cask create app-name
-```
+{% endhighlight %}
 
 Please check the [naming details](https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#cask-naming-details) before naming your cask. The rest of the contributing guide contains all the following details as well, but I'm going to go through them anyways.
 
@@ -150,37 +151,37 @@ This should immediately open up your default editor where you can go ahead and f
 
 Time to commit. Add your cask and commit it with a sensible message containing the name and version number.
 
-```
+{% highlight sh %}
 $ git add Casks/app-name.rb
 $ git commit -m 'Add app-name v0.1'
-```
+{% endhighlight %}
 
 Now let's add our fork as a remote so we can push the changes to GitHub with one of the following two commands depending on if you interact with GitHub over SSH (second command) or not (first one).
 
-```
+{% highlight sh %}
 $ git remote add fork https://github.com/your-username/homebrew-cask.git
 $ git remote add fork git@github.com:your-username/homebrew-cask.git
-```
+{% endhighlight %}
 
 And push it.
 
-```
+{% highlight sh %}
 $ git push fork add-app-name -u
-```
+{% endhighlight %}
 
 You can now visit the [main cask repo](https://github.com/caskroom/homebrew-cask) where a green button to submit your pull request should be greeting you. Click that, check the changed files just to be sure you did what you wanted and submit it. The repo is very active and presuming everything is awesome it shouldn't be long for it to be merged.
 
 Just don't forget to switch back to the master branch in your local cask repo, otherwise you won't be getting future updates ;)
 
-```
+{% highlight sh %}
 $ git checkout master
-```
+{% endhighlight %}
 
 You can also delete your local feature branch if everything is done.
 
-```
+{% highlight sh %}
 $ git branch -d add-app-name
-```
+{% endhighlight %}
 
 You're now officially a contributer to cask, awesome stuff.
 
