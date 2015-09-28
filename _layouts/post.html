@@ -14,7 +14,9 @@ layout: default
                     {% endif %}
                     <span class="meta">
                         Posted by {% if page.author %}{{ page.author }}{% else if site.author_short %}{{ site.author_short }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}
+                        {% if page.comments %}
                         - <a href="{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{page.url}}"></a>
+                        {% endif %}
                     </span>
                 </div>
             </div>
@@ -30,6 +32,7 @@ layout: default
 
 				{{ content }}
 
+                {% if page.comments %}
                 <!-- Disqus powered comments -->
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
@@ -44,6 +47,7 @@ layout: default
                     })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                {% endif %}
 
                 <hr>
 
