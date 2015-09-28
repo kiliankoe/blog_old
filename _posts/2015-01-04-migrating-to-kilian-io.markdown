@@ -3,6 +3,7 @@ layout: post
 title: "Migrating to kilian.io"
 permalink: "kilianio/"
 date: 2015-01-04T15:25:41+02:00
+comments: true
 ---
 
 I spent most of today moving around my e-mail *infrastructure*. The way I had it configured would probably bring tears to most people's eyes, so I'll spare you the gruesome details. Let's just say that nothing is forwarding to Google Mail any longer and I'll be using a different address as my main contact address from here on out. Namely **me@kilian.io**. The domain kilian.io has been pointing to my server at [Uberspace](https://uberspace.de) for a little while now, but it hasn't been much more than a little gimmick, just like [kilian.sexy](http://kilian.sexy) ;)

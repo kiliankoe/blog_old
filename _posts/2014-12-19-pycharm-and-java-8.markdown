@@ -4,6 +4,7 @@ title: "PyCharm and Java 8"
 subtitle: "How to fix a flickering bug on OS X."
 permalink: "pycharmjava8/"
 date: 2014-12-19T15:23:59+02:00
+comments: true
 ---
 
 There's been a [bug](https://youtrack.jetbrains.com/issue/IDEA-131632) with current versions of Jetbrains products (not just Pycharm, but also IntelliJ IDEA, Android Studio, AppCode and surely the others as well) on OS X 10.10 Yosemite where the editor screen flickers uncontrollably when you scroll the view. It's been making my workflow increasingly difficult and was generally unpleasing, but there is a way around this!

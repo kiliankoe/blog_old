@@ -6,4 +6,5 @@ subtitle: "{{ subtitle }}"
 date: {{ date }}
 author: {{ author }}
 header-img: "img/"
+comments: true
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "ParkenDD"
 subtitle: "Open Data and my first real iOS app."
 date: 2015-02-26T15:26:42+02:00
+comments: true
 ---
 
 A few months ago [Code for Germany](http://codefor.de) launched. An *OK Lab* (*Open Knowledge Lab*) was founded in Dresden soon after, although similar projects ([offenesdresden.de](http://offenesdresden.de)) were already in place. Everything merged and Dresden has had quite an active community interested in bringing Open Data to the next level. It's awesome.

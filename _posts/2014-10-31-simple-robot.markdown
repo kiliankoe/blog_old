@@ -3,6 +3,7 @@ layout: post
 title: "Simple Robot"
 permalink: "simplerobot/"
 date: 2014-10-31T15:20:28+02:00
+comments: true
 ---
 
 It's been a while since I've touched Blender. A lot has changed, everything is awesome. There's not all too much to say, but I'm a real sucker for pretty clay renders, so here's a simple little robot.

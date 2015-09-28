@@ -3,6 +3,7 @@ layout: post
 title: "Launching Alfred With Caps Lock on OS X"
 permalink: "alfredcapslock/"
 date: 2013-11-05T15:09:21+02:00
+comments: true
 ---
 
 In great contrast to [Alfred](http://www.alfredapp.com/) being one of those apps I love more than anything on OS X, the caps lock key is something utterly useless nowadays (or ever for that matter). And if you do happen to find yourself in an argument on the internet, even [Homer Simpson agrees](http://www.youtube.com/watch?v=xznylVUyND0) that you put a lot more weight into your statement if you take your time to press the shift key. The already mentioned Alfred however is so immensely useful, that even two keys for its hotkey (the default `alt` + `space`) is too much. So why not combine the two and have a dedicated *launch everything and search for stuff anywhere* key on your keyboard?

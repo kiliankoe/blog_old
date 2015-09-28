@@ -3,6 +3,7 @@ layout: post
 title: "Autodesk Being Awesome"
 permalink: "autodesk/"
 date: 2011-04-09T15:07:30+02:00
+comments: true
 ---
 
 I remember being severely dissapointed about two years ago when I wanted to download the free students version of Maya, the so called PLE (Personal Learning Edition), but since Maya had already been acquired by Autodesk (before: Alias), this was no longer offered. I also wasn’t able to find any mirrors for that online, but today that PLE would be a far outdated version, so it wouldn’t be that useful anyways.

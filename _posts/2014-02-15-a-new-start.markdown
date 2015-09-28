@@ -4,6 +4,7 @@ title: "A New Start"
 subtitle: "Blog reboot #5 (or somewhere between 5 and 20)"
 permalink: "anustart/"
 date: 2014-02-15T15:11:57+02:00
+comments: true
 ---
 
 **UPDATE 2015-08-04**: Kinda ironic moving back to Octopress now, isn't it? But Octopress 3.0 is looking so *niiiiiiceee*!

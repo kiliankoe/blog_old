@@ -4,6 +4,7 @@ title: "Installing OS X Applications Through Homebrew"
 subtitle: "A quick howto for brew cask."
 permalink: "homebrewcask/"
 date: 2014-07-21T15:19:09+02:00
+comments: true
 ---
 
 I have to admit to having been slightly jealous of a friend running Arch Linux on his laptop when he went ahead and installed [xmind](http://www.xmind.net/de/) right through his package manager (or actually [yaourt](https://wiki.archlinux.org/index.php/yaourt), but I won't make the distinction here). Now don't get me wrong, there's nothing wrong with installing applications on OS X. It's dead simple.

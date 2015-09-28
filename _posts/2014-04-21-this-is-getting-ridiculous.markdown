@@ -4,6 +4,7 @@ title: "This Is Getting Ridiculous"
 subtitle: "Don't take your bike to Dresden if you love it."
 permalink: "bikethievery/"
 date: 2014-04-21T15:17:11+02:00
+comments: true
 ---
 
 ![parts stolen from my bike](https://i.imgur.com/StbQbJN.jpg)

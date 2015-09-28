@@ -3,6 +3,7 @@ layout: post
 title: "Valentina Kalashnikova - Last Dangerous Racoons"
 permalink: "valentinakalashnikova/"
 date: 2013-11-07T15:10:37+02:00
+comments: true
 ---
 
 Just got back from an awesome gig from a small local band a friend of mine plays in. They're called the *Last Dangerous Racoons* and this title of theirs is definitely worth a listen!
