@@ -19,6 +19,3 @@ github_username:  kiliankoe
 # Build settings
 markdown: kramdown
 
-collections:
-  projects:
-    output: true
