@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+header-img: "img/contact-bg.jpg"
 ---
 
 There's a few ways you can contact me, choose from the following:

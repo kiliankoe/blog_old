@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+header-img: "img/about-bg.jpg"
 ---
 
 Hi, my name's Kilian and I'm a student at TU Dresden in Germany. I also like to write code. Mostly for things on iOS/OS X devices and the web. 'Cause that's fun.

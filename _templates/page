@@ -1,4 +1,6 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
+permalink: "{{ permalink }}"
+header-img: "img/"
 ---

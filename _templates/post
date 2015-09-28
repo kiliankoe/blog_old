@@ -1,5 +1,8 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
+subtitle: "{{ subtitle }}"
 date: {{ date }}
+author: {{ author }}
+header-img: "img/"
 ---
