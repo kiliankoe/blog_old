@@ -17,7 +17,7 @@ header-img: "img/home-bg.jpg"
     <p class="post-meta">
     Posted by {% if post.author %}{{ post.author }}{% else if site.author_short %}{{ site.author_short }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     <!-- Disqus comment count -->
-    -
+    - <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">0 comments</a>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
         var disqus_shortname = 'blogkilianio';
