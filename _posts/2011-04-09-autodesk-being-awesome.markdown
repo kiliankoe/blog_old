@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Autodesk Being Awesome"
-permalink: "autodesk"
+permalink: "autodesk/"
 date: 2011-04-09T15:07:30+02:00
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "PyCharm and Java 8"
 subtitle: "How to fix a flickering bug on OS X."
-permalink: "pycharmjava8"
+permalink: "pycharmjava8/"
 date: 2014-12-19T15:23:59+02:00
 ---
 

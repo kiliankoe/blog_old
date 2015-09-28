@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Valentina Kalashnikova - Last Dangerous Racoons"
-permalink: "valentinakalashnikova"
+permalink: "valentinakalashnikova/"
 date: 2013-11-07T15:10:37+02:00
 ---
 
