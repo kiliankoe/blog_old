@@ -22,7 +22,7 @@ So much for the update. Read below for the original post written a few days afte
 
 ---
 
-This post is basically one big personal opinion. Some things I've noticed about the Apple Watch while using it for a short time. Maybe others will see them the same way and maybe these points don't apply to you at all, that's ok, I'm not trying to make any definitive statement. This is just what I've observed.
+This post is basically one big personal opinion. Some things I've noticed about the Apple Watch while using it for a short time. Maybe others will see them the same way and maybe these points don't apply to you at all, that's ok, I'm not trying to make any definitive statement. This is just what I've observed.
 
 Let's make this one big pro/contra list and start it out with the positive points. The stuff the Apple Watch gets right.
 
