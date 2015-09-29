@@ -1,6 +1,7 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
+permalink: "foobar/"
 subtitle: "{{ subtitle }}"
 date: {{ date }}
 author: {{ author }}
