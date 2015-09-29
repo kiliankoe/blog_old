@@ -9,9 +9,9 @@
     <meta name="description" content="Kilian's blog 'n stuff. Sounds about right.
 ">
 
-    <title>Migrating to kilian.io - trial and error</title>
+    <title>Pulling Off the Wiggle Effect - trial and error</title>
 
-    <link rel="canonical" href="http://blog.kilian.io/kilianio/">
+    <link rel="canonical" href="http://blog.kilian.io/pulling-off-the-wiggle-effect/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -108,10 +108,10 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Migrating to kilian.io</h1>
+                    <h1>Pulling Off the Wiggle Effect</h1>
                     
                     <span class="meta">
-                        Posted by Kilian on January 4, 2015
+                        Posted by Kilian on June 8, 2009
                     </span>
                 </div>
             </div>
@@ -125,22 +125,25 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>I spent most of today moving around my e-mail <em>infrastructure</em>. The way I had it configured would probably bring tears to most people’s eyes, so I’ll spare you the gruesome details. Let’s just say that nothing is forwarding to Google Mail any longer and I’ll be using a different address as my main contact address from here on out. Namely <strong>me@kilian.io</strong>. The domain kilian.io has been pointing to my server at <a href="https://uberspace.de">Uberspace</a> for a little while now, but it hasn’t been much more than a little gimmick, just like <a href="http://kilian.sexy">kilian.sexy</a> ;)
-I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carries more personality, more <em>me</em> than just my last name. And since kilian@kilian.io just looks ridiculous I’m choosing to go with the very informal me@kilian.io instead.</p>
+				<p>I was asked the question on how to make a video in After Effects vibrate or move randomly in a small amount of time. This is an easy task, but hard to explain in a YouTube comment.</p>
 
-<p>The <em>old</em> domain koeltzs.ch isn’t going anywhere any time soon. I’ll probably be renewing it as well for the years to come, mails and redirects will still work. Transitioning basically my life’s worth of emails is no easy task either, but consider my Google Mail address officially deprecated from here on out.</p>
+<p>Basically all there is to do is create a so called expression. Expressions are (simple) commands that you can use to control almost everything in After Effects. They work like programs (if you ever had the priviledge of writing even the tiniest amount of code in any programming language), you have to take care to use the correct syntax and use special commands.
+Now, if you have absolutely no idea what I just said, don’t worry, you don’t have to.</p>
 
-<p>I’ve also used this chance to deactivate the catchall for all my domains. Mail bounces aren’t necessarily a bad thing and this should also greatly help reduce the amount of spam that hits my mailserver day and night.</p>
+<p>So let’s get to it. First of all you have to find the layer you want to be wiggled (that sounds interesting ;)). If you have multiple layers you might want to precompose those (Layer -&gt; Pre-Compose), so that you’re only working with one. Now open the layer’s properties (toggle the little arrow at the bottom) and look for the position attribute. Now see that little stopwatch? Hold down alt on your keyboard and click it. Something in the likes of a text field should pop up. This is where we’ll enter our expression.</p>
 
-<p>My PGP key has also been updated with the new address and I’ll soon be transitioning to me@kilian.io for some of my xmpp/jabber conversations as well. Even though my site already states this, that particular change will still take a bit.</p>
+<p><img src="/assets/aftereffects_wiggle.jpg" alt="screenshot" /></p>
 
-<p>I really do have to endorse <a href="https://fastmail.com">Fastmail.com</a> somewhere throughout this post. Hosting my own mail server is something I definitely <strong>do not</strong> want to do be doing.  I have a tendency not to trust software that I maintain myself (I know that sounds sad) and even more so when I don’t understand it all. So even though I’d be able to keep it running, I’m not sure it would be doing so safely or for a very long time. I’m trusting this one with people that make this their living. The recommendation for Fastmail comes from <a href="http://marco.org">Marco Arment</a>. They’ve been around for a little while and are doing some <a href="http://blog.fastmail.com/2014/12/23/jmap-a-better-way-to-email/">really cool things</a> as well, they definitely know what they’re doing and are doing it well. And I enjoy paying for something of use to me, highlighting the fact that I’m probably not the product here.</p>
+<p>The one we’re aiming for is, if you can remember, the wiggle expression. It goes something like this wiggle(1,1). That’s it! That’s all you have to put in that box. Whatever was already in there, you can just delete that, it’s only a filler.</p>
 
-<p>I’m definitely going to run into a few gotchas with this move, I’m sure of that. But I have to be doing this someday. So <a href="http://longestjokeintheworld.com">better nate than lever</a>.</p>
+<p>But we’ve got to take a quick look at the numbers and what they mean. All you have to do to understand them is to read the expression like this “Every 1 second, wiggle 1 pixel”. So the first number is the speed or time interval. It is also possible to use fractions of a second, so 0.5 or 0.1 would be perfectly fine. They would cause extremely fast movement however.
+The second number is the distance the layer will move from it’s original position. I guess you could call it the amount it would wiggle. The best way to find the right number here is to play with it. Just use something, check the RAM preview and see if it worked out. If not, go for something else.</p>
 
-<p>It’s actually been a lot of fun and the only thing to change now is the domain for this blog. Unfortunately I can’t run this under two domains simultaneously, so I’m going to be making this switch Monday evening (as in today, depending on how current this is when you read it). So if you’re one of the few people I know to be subscribed to the feed, please update it to check blog.kilian.io from now on. Thanks :)</p>
+<p>That’s it! Really, it’s wiggling like crazy now! Well, depending on your settings.</p>
 
-<p>Edit: Done :)</p>
+<p>Something you might also need to look out for are the borders. If it’s moving, it can’t stay fixed to its borders of course. So for no black edges around your composition, you might need to make it smaller or your footage larger. The amount of change depends on the settings you used in the expression of course.</p>
+
+<p>There you go, I hope that helped!</p>
 
 
                 
@@ -165,12 +168,12 @@ I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carrie
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/pycharmjava8/" data-toggle="tooltip" data-placement="top" title="PyCharm and Java 8">&larr; Previous Post</a>
+                        <a href="/ekg-effect-in-after-effects/" data-toggle="tooltip" data-placement="top" title="EKG Effect in After Effects">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/parkendd/" data-toggle="tooltip" data-placement="top" title="ParkenDD">Next Post &rarr;</a>
+                        <a href="/getting-better-tracking-results/" data-toggle="tooltip" data-placement="top" title="Getting Better Tracking Results">Next Post &rarr;</a>
                     </li>
                     
                 </ul>

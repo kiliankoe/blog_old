@@ -9,9 +9,9 @@
     <meta name="description" content="Kilian's blog 'n stuff. Sounds about right.
 ">
 
-    <title>Migrating to kilian.io - trial and error</title>
+    <title>Getting Better Tracking Results - trial and error</title>
 
-    <link rel="canonical" href="http://blog.kilian.io/kilianio/">
+    <link rel="canonical" href="http://blog.kilian.io/getting-better-tracking-results/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -108,10 +108,10 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Migrating to kilian.io</h1>
+                    <h1>Getting Better Tracking Results</h1>
                     
                     <span class="meta">
-                        Posted by Kilian on January 4, 2015
+                        Posted by Kilian on June 8, 2009
                     </span>
                 </div>
             </div>
@@ -125,22 +125,32 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>I spent most of today moving around my e-mail <em>infrastructure</em>. The way I had it configured would probably bring tears to most people’s eyes, so I’ll spare you the gruesome details. Let’s just say that nothing is forwarding to Google Mail any longer and I’ll be using a different address as my main contact address from here on out. Namely <strong>me@kilian.io</strong>. The domain kilian.io has been pointing to my server at <a href="https://uberspace.de">Uberspace</a> for a little while now, but it hasn’t been much more than a little gimmick, just like <a href="http://kilian.sexy">kilian.sexy</a> ;)
-I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carries more personality, more <em>me</em> than just my last name. And since kilian@kilian.io just looks ridiculous I’m choosing to go with the very informal me@kilian.io instead.</p>
+				<p>So you’ve got a bad track, or one that’s not even bad, it’s far worse than that. This can be due to numerous things like bad lighting, missing contrast etc. A bad track is usually just a track that didn’t work out. We’re going to stay with the basic After Effects point tracker here, just so you know.</p>
 
-<p>The <em>old</em> domain koeltzs.ch isn’t going anywhere any time soon. I’ll probably be renewing it as well for the years to come, mails and redirects will still work. Transitioning basically my life’s worth of emails is no easy task either, but consider my Google Mail address officially deprecated from here on out.</p>
+<p>When you analyze your footage, and the tracker jumps around wildly or fails to stay on the spot you want it to, you’re dealing with one of the reasons that cause a bad track.</p>
 
-<p>I’ve also used this chance to deactivate the catchall for all my domains. Mail bounces aren’t necessarily a bad thing and this should also greatly help reduce the amount of spam that hits my mailserver day and night.</p>
+<p>So what can we do?</p>
 
-<p>My PGP key has also been updated with the new address and I’ll soon be transitioning to me@kilian.io for some of my xmpp/jabber conversations as well. Even though my site already states this, that particular change will still take a bit.</p>
+<p>Well, there’s three really simple solutions to this problem. We’ll go through them step by step.</p>
 
-<p>I really do have to endorse <a href="https://fastmail.com">Fastmail.com</a> somewhere throughout this post. Hosting my own mail server is something I definitely <strong>do not</strong> want to do be doing.  I have a tendency not to trust software that I maintain myself (I know that sounds sad) and even more so when I don’t understand it all. So even though I’d be able to keep it running, I’m not sure it would be doing so safely or for a very long time. I’m trusting this one with people that make this their living. The recommendation for Fastmail comes from <a href="http://marco.org">Marco Arment</a>. They’ve been around for a little while and are doing some <a href="http://blog.fastmail.com/2014/12/23/jmap-a-better-way-to-email/">really cool things</a> as well, they definitely know what they’re doing and are doing it well. And I enjoy paying for something of use to me, highlighting the fact that I’m probably not the product here.</p>
+<h3 id="number-1--pre-shoot">Number 1 – Pre-Shoot</h3>
 
-<p>I’m definitely going to run into a few gotchas with this move, I’m sure of that. But I have to be doing this someday. So <a href="http://longestjokeintheworld.com">better nate than lever</a>.</p>
+<p>What I’m trying to say with the title is that these changes can be made before you actually shoot the video. They’re simple and pretty obvious. Get some good lighting! It can be anything, a desktop lamp, a flashlight or some professional studio lighting. All that matters is that you get some more detail in the object that you’re filming. For demonstration purposes we’re going to be talking about an open hand. A specific spot in the middle of a hand is hard to track, there’s not a lot of difference there. So what do you say about creating our own differences? It’s easy, just take a small (really small) piece of colored paper and place it in the middle of your hand. Or even take a marker (preferably a color that’s actually visible -&gt; black for example) and draw a small dot in your palm.
+Tracking that will almost always work perfectly! When editing you can then cover it up, mask it away or leave it, depending on your desires.</p>
 
-<p>It’s actually been a lot of fun and the only thing to change now is the domain for this blog. Unfortunately I can’t run this under two domains simultaneously, so I’m going to be making this switch Monday evening (as in today, depending on how current this is when you read it). So if you’re one of the few people I know to be subscribed to the feed, please update it to check blog.kilian.io from now on. Thanks :)</p>
+<h3 id="number-2--while-editing">Number 2 – While editing</h3>
 
-<p>Edit: Done :)</p>
+<p>This one’s a bit more difficult, but you should be able to manage it nonetheless. The idea is to create more contrast digitally, so the tracker can then find better points. After Effects however won’t recognize any effects you’ve applied to the video when tracking, so we’re going to have to trick it into thinking that the effects were there already. This is easily achievable with pre-composing.
+So, we’re going to apply some crazy effects to our hand footage. Levels, Curves, Noise, etc. Just play around with the settings until you find something that makes the hand a lot more distinct. Where you think the tracker will be able to differentiate that certain point better from others. And don’t worry, we’re not going to leave these effects on our video.
+Once you’ve got something interesting down, go ahead and pre-compose that layer by selecting it and going into Layer -&gt; Pre-Compose. Be sure to move all the attributes to the new composition, it’s important here. Now you can just go and track it again. Not the video layer in the new composition, but the new composition in your original composition!
+You should get some better results this time.</p>
+
+<h3 id="number-3--a-different-tracker">Number 3 – A different tracker</h3>
+
+<p>Yes, there are different trackers out there. However, I just wanted to say this option exists, I’m not going to be describing anything here. In case you’ve got After Effects CS4 you should already have a program called Mocha installed on your PC as well. Mocha is a far more powerful tracker than the built-in point tracker After Effects offers you.
+If you google a bit you’re bound to find some interesting tutorials that help you better understand Mocha and how it works, I can tell you that it’s a gem!</p>
+
+<p>So there you go, this information should definitely help you out with some of the popular tracking problems people keep on experiencing.</p>
 
 
                 
@@ -165,12 +175,12 @@ I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carrie
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/pycharmjava8/" data-toggle="tooltip" data-placement="top" title="PyCharm and Java 8">&larr; Previous Post</a>
+                        <a href="/pulling-off-the-wiggle-effect/" data-toggle="tooltip" data-placement="top" title="Pulling Off the Wiggle Effect">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/parkendd/" data-toggle="tooltip" data-placement="top" title="ParkenDD">Next Post &rarr;</a>
+                        <a href="/a-hit-at-a-typography-video/" data-toggle="tooltip" data-placement="top" title="A Hit at a Typography Video">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
