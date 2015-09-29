@@ -15,12 +15,7 @@ header-img: "img/home-bg.jpg"
         {% endif %}
     </a>
     <p class="post-meta">
-    Posted by {% if post.author %}{{ post.author }}{% else if site.author_short %}{{ site.author_short }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-
-    {% if post.comments %}
-    <!-- Disqus comment count -->
-    - <a href="{{ post.url | prepend: site.baseurl }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
-    {% endif %}
+        Posted by {% if post.author %}{{ post.author }}{% else if site.author_short %}{{ site.author_short }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>
 <hr>
