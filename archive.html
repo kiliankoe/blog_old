@@ -4,7 +4,7 @@ title: "Archive"
 ---
 
 <h2>Post Archive</h2>
-<ul>
+<ul class="list-unstyled">
     {% for post in site.posts %}
         {% unless post.next %}
             <h3>{{ post.date | date: '%Y' }}</h3>
@@ -15,6 +15,15 @@ title: "Archive"
                 <h3>{{ post.date | date: '%Y' }}</h3>
             {% endif %}
         {% endunless %}
-        <li>{{ post.date | date:"%d %b" }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li class="row">
+          <span class="col-xs-4 col-md-2">
+          <small>
+            {{ post.date | date:"%d %b" }}
+          </small>
+          </span>
+          <span class="col-xs-8 col-md-10" >
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          </span>
+        </li>
     {% endfor %}
 </ul>
