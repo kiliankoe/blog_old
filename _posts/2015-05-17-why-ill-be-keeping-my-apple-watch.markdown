@@ -22,9 +22,9 @@ So much for the update. Read below for the original post written a few days afte
 
 ---
 
-This post is basically one big personal opinion. Some things I've noticed about the Apple Watch while using it for a short time. Maybe others will see them the same way and maybe these points don't apply to you at all, that's ok, I'm not trying to make any definitive statement. This is just what I've observed.
+This post is basically one big personal opinion. Some things I've noticed about the watch while using it for a short time. Maybe others will see them the same way and maybe these points don't apply to you at all, that's ok, I'm not trying to make any definitive statement. This is just what I've observed.
 
-Let's make this one big pro/contra list and start it out with the positive points. The stuff the Apple Watch gets right.
+Let's make this one big pro/contra list and start it out with the positive points. The stuff the watch gets right.
 
 ## Pros
 
@@ -42,7 +42,7 @@ I'm also a huge fan of all kinds of statistics about myself. I absolutely love h
 I might not have been a big watch user the last few years. But every time I do wear one on my wrist, I very much enjoy the convenience of quickly being able to tell the time. It seems like such a minor thing, but it definitely is worth a lot. I also check my iPhone multiple times a day for the current temperature outside. Doing this with the same simplicity of checking the time is also very comfortable. Definitely a plus.
 
 ### Digital Crown
-Remember how excited Jonny Ive seemed about the digital crown when the Apple Watch was announced? It seemed kinda ridiculous at the time, but now I have to say that this input device really is something. Scrolling through content with the digital crown just feels so much easier than swiping on this little screen. I'm very happy Apple chose this route and did not just give us a little iPhone screen on our wrists where we have to swipe on the screen obstructing the view almost entirely.
+Remember how excited Jonny Ive seemed about the digital crown when the watch was announced? It seemed kinda ridiculous at the time, but now I have to say that this input device really is something. Scrolling through content with the digital crown just feels so much easier than swiping on this little screen. I'm very happy Apple chose this route and did not just give us a little iPhone screen on our wrists where we have to swipe on the screen obstructing the view almost entirely.
 
 
 ## Cons
