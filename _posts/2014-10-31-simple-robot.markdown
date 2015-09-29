@@ -8,7 +8,7 @@ comments: true
 
 It's been a while since I've touched Blender. A lot has changed, everything is awesome. There's not all too much to say, but I'm a real sucker for pretty clay renders, so here's a simple little robot.
 
-![clay render](https://i.imgur.com/j8gZjJa.jpg)
+![clay render]({{ site.baseurl }}/assets/simplerobot.jpg)
 
 Note that this render is in 2400p, the native resolution of the new MacBook Pro. I didn't want said device to go up in flames though, so a shoutout goes to [render.st](https://render.st) (and especially their signup bonus).
 

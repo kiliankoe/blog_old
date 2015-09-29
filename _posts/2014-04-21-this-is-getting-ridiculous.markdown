@@ -7,7 +7,7 @@ date: 2014-04-21T15:17:11+02:00
 comments: true
 ---
 
-![parts stolen from my bike](https://i.imgur.com/StbQbJN.jpg)
+![parts stolen from my bike]({{ site.baseurl }}/assets/bikethievery.jpg)
 
 November 29th, 2012: Left a math lecture on a rainy day and wanted to get home as quick as possible. But it looked like I would be carrying my bike home seeing how some douche had stolen my front wheel on campus. Seeing how I moved to Dresden with *quick release skewers* (if I can trust dict.leo.org) however, this happening was just a matter of time.
 Instead of directly buying a new wheel (and new brakes, thank you, asshole! Oh, and a [Pitlock](http://www.pitlock.de/) system) I went with a completely new (as in old) and cheap bicycle. Fast forward to January and a few stitches on my face, and I wanted to go back to riding *my* bike.

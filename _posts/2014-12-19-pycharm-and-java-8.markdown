@@ -13,6 +13,6 @@ Kudos goes to [Justus](http://justusadam.com) for pointing this one out.
 
 All you have to do is set your favorite Jetbrains IDE to use the JVM version 1.8 instead of the default 1.6. This is easily done on OS X by editing the `Info.plist` found at `/Applications/<PyCharm.app or something else>/Contents/Info.plist` like this.
 
-![screenshot](https://i.imgur.com/MVsLBn3.png)
+![screenshot of pycharms info.plist]({{ site.baseurl }}/assets/pycharminfoplist.png)
 
 Interestingly enough this will also make your Darcula theme a little darker (very pretty) and the font rendering gets a lot better as well. Perfect fix!
