@@ -6,9 +6,34 @@
 </description>
     <link>http://blog.kilian.io/</link>
     <atom:link href="http://blog.kilian.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Sep 2015 23:19:25 +0200</pubDate>
-    <lastBuildDate>Tue, 29 Sep 2015 23:19:25 +0200</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Fri, 20 Nov 2015 02:09:35 +0100</pubDate>
+    <lastBuildDate>Fri, 20 Nov 2015 02:09:35 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>HeartBattery</title>
+        <description>&lt;p&gt;A &lt;a href=&quot;https://github.com/meepoSenpai&quot;&gt;friend&lt;/a&gt; recently had the fun idea to write a small script for his machine running Arch displaying his current battery state as a series of hearts instead of the traditional boring percentage. He did so via a short python script and the magic of Font Awesome to integrate with Conky.&lt;/p&gt;
+
+&lt;p&gt;I have to admit that writing a quick script in your language of choice makes customization like this a lot easier than on OS X, but I liked the idea and wanted to follow along with something native as well. So today I wrote a little app in Swift titled HeartBattery.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/heartbatterygif.gif&quot; alt=&quot;menubar gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It doesn’t really do a whole lot besides pulling the state of your battery every five minutes and telling you a few things about it. The hardest part was actually getting the data and generating the image. Getting the data unfortunately isn’t as easy as reading it from a file somewhere like others systems do it, but you have to interface with some rather confusing C APIs. Not really wanting to do that I eventually stumbled across &lt;a href=&quot;https://github.com/beltex/SystemKit&quot;&gt;SystemKit&lt;/a&gt;, a Swift lib that abstracts all that away and offers an API that couldn’t be much simpler. It’s from the same person behind &lt;a href=&quot;https://github.com/beltex/dshb&quot;&gt;dshb&lt;/a&gt;, that amazingly pretty ncurses powered system monitor for OS X.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately it doesn’t seem possible to set a custom font for a status item and multiple images are also not an option (afaik), so I had to resort to compositing a few icons together on every refresh of the app to generate a single wide image for the menubar representing the current battery state. Really doesn’t feel like the cleanest option, but another thing learned can’t be bad either I guess.&lt;/p&gt;
+
+&lt;p&gt;If you want to have a look you can find the source and download link on the GitHub repo &lt;a href=&quot;https://github.com/kiliankoe/HeartBattery&quot;&gt;here&lt;/a&gt;. And as usual, if you have any ideas, suggestions or think my code sucks and want to tell me how to improve it, please put a comment below or head straight for the issue/pullrequest 😊&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/heartbatteryscreenshot.png&quot; alt=&quot;app menu screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now all that’s missing is a &lt;em&gt;bling&lt;/em&gt; sound whenever you lose a heart 😄&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 01:41:59 +0100</pubDate>
+        <link>http://blog.kilian.io/heartbattery/</link>
+        <guid isPermaLink="true">http://blog.kilian.io/heartbattery/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Using Disqus With Jekyll</title>
@@ -22,7 +47,7 @@
 
 &lt;p&gt;There’s two things listed on the page. The embed code for the comments themselves and the embed code for displaying the comment count. Let’s start with the first.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;comments&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;comments&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;disqus_thread&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;cm&quot;&gt;/* * * CONFIGURATION VARIABLES * * */&lt;/span&gt;
@@ -36,7 +61,7 @@
     &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;noscript&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Please&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;view&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;https://disqus.com/?ref_noscript&amp;quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;nofollow&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;comments&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;powered&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Disqus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;I wrapped the code from Disqus in a liquid if statement as well. This checks if your post’s frontmatter contains a comments field. Go ahead and add that as &lt;code&gt;comments: true&lt;/code&gt;. Doing it this way lets you disable comments for a post if needed.&lt;/p&gt;
 
@@ -48,7 +73,7 @@
 
 &lt;p&gt;Add the following code to your &lt;code&gt;_includes/footer.html&lt;/code&gt; (be sure to change your shortname if copying from here).&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Disqus&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Comments&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Disqus&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Comments&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;cm&quot;&gt;/* * * CONFIGURATION VARIABLES * * */&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_shortname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;yourdisqusshortname&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -60,21 +85,21 @@
         &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;//&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;disqus_shortname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;.disqus.com/count.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;HEAD&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;BODY&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}());&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This code will be responsible for checking all occurrences of comment counts on the page and updating them. First we’re going to have to tell it where these comment counts are.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% if post.comments %}
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% if post.comments %}
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{% post.url %}index.html#disqus_thread&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-disqus-identifier=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{% post.url %}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This is the code you’ll want to insert in your &lt;code&gt;index.html&lt;/code&gt; wherever you want comment counts for a specific post. It sets a custom Disqus identifier which relies only on the post’s permalink, which is rather handy if your blog’s URL should ever change.&lt;/p&gt;
 
 &lt;p&gt;The code is slightly different when adding this to the post’s page. This goes into &lt;code&gt;_layouts/post.html&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% if page.comments %}
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% if page.comments %}
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{% page.url %}index.html#disqus_thread&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-disqus-identifier=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{% page.url %}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;See how this uses &lt;code&gt;page&lt;/code&gt; instead of &lt;code&gt;post&lt;/code&gt;.&lt;/p&gt;
 
@@ -282,8 +307,8 @@ I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carrie
 
 &lt;p&gt;Unfortunately cask isn’t included in main homebrew repo, but don’t despair, that just makes us run one more command.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew tap caskroom/cask
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install brew-cask&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew tap caskroom/cask
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install brew-cask&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Note: You might find others online referencing to tap phinze/cask instead, which isn’t wrong, it’s just old. Fortunately GitHub redirects phinze/cask to caskroom/cask, but this might stop working one day, so just go with caskroom/cask and you won’t have to worry.&lt;/p&gt;
 
@@ -293,42 +318,42 @@ I’ve been starting to enjoy it a lot more than koeltzs.ch though, as it carrie
 
 &lt;p&gt;First thing you should do is update cask:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask update&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This is basically an alias to &lt;code&gt;git pull origin master&lt;/code&gt; in the cask repo and updates your list of available casks to the current status. Running this often is key, as new casks are created and others are updated on a daily basis. Run this if you can’t find a cask or before installing one if you haven’t updated in a little why to ensure you get the newest version of an application.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask search app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask search app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Want to know if an app you’re looking to install is available through cask? Just run this. The naming strategy is pretty straight forward with everything being lowercase and dashes for spaces. Search also finds partial results, so for example this works:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;kilian@Apollo:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask search &lt;span class=&quot;nv&quot;&gt;intellij&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;kilian@Apollo:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask search &lt;span class=&quot;nv&quot;&gt;intellij&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&amp;gt; Partial matches
-intellij-idea	    intellij-idea-ce&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+intellij-idea	    intellij-idea-ce&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask install app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask install app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Installs an app. Simple. It also automatically runs through any zip files, disk images or packages. It’ll prompt you if an admin password is needed.
 One thing to note is that applications are by default &lt;em&gt;not&lt;/em&gt; installed to &lt;code&gt;/Applications&lt;/code&gt;, but to &lt;code&gt;/opt/homebrew-cask/Caskroom/app-name/version/app-name.app&lt;/code&gt; and then symlinked to &lt;code&gt;~/Applications&lt;/code&gt;. This is no problem for your mac, but in case you’d like to link it to &lt;code&gt;/Applications&lt;/code&gt; instead, run the command like this &lt;code&gt;brew cask install app-name --appdir=/Applications&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask uninstall app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask uninstall app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This should be about as self-explanatory as it gets. As I mentioned already however this doesn’t just remove the application from your system, but for a few special apps that require their own uninstaller to be run, this is done instead.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask list&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Lists all your installed casks. If you run it together with an application name it’ll tell you which files are installed and where they reside.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask cleanup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask cleanup&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Cleans up downloaded files which are usually not removed after installing an application. Might free you up quite a bit of space on your harddrive.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask home app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask home app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Takes you to the homepage of an application. Be it the developer’s site, a GitHub repo or whatnot.&lt;/p&gt;
 
 &lt;p&gt;And last but not least, an essential one if you’re an &lt;a href=&quot;http://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt;-junkie like me:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask alfred link&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask alfred link&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This adds the install directory to Alfred’s search path so you can find your installed applications with Alfred.&lt;/p&gt;
 
@@ -346,7 +371,7 @@ One thing to note is that applications are by default &lt;em&gt;not&lt;/em&gt; i
 
 &lt;p&gt;As you can see it just includes a command on each line without the &lt;code&gt;brew&lt;/code&gt; command itself.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;...
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;...
 install node
 install ffmpeg
 ...
@@ -358,7 +383,7 @@ install brew-cask
 cask alfred link
 cleanup
 cask cleanup
-...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Lines starting with a &lt;code&gt;#&lt;/code&gt; are comments and will be ignored by homebrew.&lt;/p&gt;
 
@@ -372,16 +397,16 @@ cask cleanup
 
 &lt;p&gt;Now open up a terminal and navigate to the cask repo on your harddrive.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /usr/local/Library/Taps/caskroom/homebrew-cask&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /usr/local/Library/Taps/caskroom/homebrew-cask&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Let’s branch off into a feature branch to add the new cask.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch add-app-name
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout add-app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch add-app-name
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout add-app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now we can create the cask by running&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask create app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew cask create app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Please check the &lt;a href=&quot;https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#cask-naming-details&quot;&gt;naming details&lt;/a&gt; before naming your cask. The rest of the contributing guide contains all the following details as well, but I’m going to go through them anyways.&lt;/p&gt;
 
@@ -389,27 +414,27 @@ cask cleanup
 
 &lt;p&gt;Time to commit. Add your cask and commit it with a sensible message containing the name and version number.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add Casks/app-name.rb
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;Add app-name v0.1&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add Casks/app-name.rb
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit -m &lt;span class=&quot;s1&quot;&gt;&amp;#39;Add app-name v0.1&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now let’s add our fork as a remote so we can push the changes to GitHub with one of the following two commands depending on if you interact with GitHub over SSH (second command) or not (first one).&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add fork https://github.com/your-username/homebrew-cask.git
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add fork git@github.com:your-username/homebrew-cask.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add fork https://github.com/your-username/homebrew-cask.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add fork git@github.com:your-username/homebrew-cask.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;And push it.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push fork add-app-name -u&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push fork add-app-name -u&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can now visit the &lt;a href=&quot;https://github.com/caskroom/homebrew-cask&quot;&gt;main cask repo&lt;/a&gt; where a green button to submit your pull request should be greeting you. Click that, check the changed files just to be sure you did what you wanted and submit it. The repo is very active and presuming everything is awesome it shouldn’t be long for it to be merged.&lt;/p&gt;
 
 &lt;p&gt;Just don’t forget to switch back to the master branch in your local cask repo, otherwise you won’t be getting future updates ;)&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can also delete your local feature branch if everything is done.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch -d add-app-name&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch -d add-app-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You’re now officially a contributer to cask, awesome stuff.&lt;/p&gt;
 
@@ -488,32 +513,6 @@ For that ever-growing downloads directory, which is more of a tmp directory for 
         <pubDate>Fri, 21 Feb 2014 14:15:29 +0100</pubDate>
         <link>http://blog.kilian.io/decluttering/</link>
         <guid isPermaLink="true">http://blog.kilian.io/decluttering/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A New Start</title>
-        <description>&lt;p&gt;&lt;strong&gt;UPDATE 2015-08-04&lt;/strong&gt;: Kinda ironic moving back to Octopress now, isn’t it? But Octopress 3.0 is looking so &lt;em&gt;niiiiiiceee&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;sub&gt;(Making the &lt;em&gt;Arrested Development&lt;/em&gt; reference in the title there was damn tempting, but nope, didn’t go for it.)&lt;/sub&gt;&lt;/p&gt;
-
-&lt;p&gt;I’m not a huge blogger, I know that. I’ve been installing and running away from I guess around 10 to 20 blogs in the last few years (I can at least find &lt;a href=&quot;http://completelyfocused.wordpress.com&quot;&gt;one&lt;/a&gt; of the remnants to still be online, probably due to the fact that this is the only instance I didn’t host myself) and have had a lot more fun playing around with the software itself than writing, although I always aim to change that.
-I guess I could write a few sentences about why I think this time might be different, but I’ve written those over and over again as well. But what I do know is that at least the software is different this time. It’s not just another Wordpress installation, it’s &lt;a href=&quot;http://ghost.org&quot;&gt;Ghost&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There’s a few things pushing me towards using Ghost as a blogging platform. It has to be something free and open, something I could host myself, something without a lot of bullshit that comes with it (sorry Wordpress and every other CMS out there), something that supports markdown, something that is managed over a browser (sorry Octopress&lt;sup&gt;1&lt;/sup&gt;), something that doesn’t push me towards writing novels for everything (sorry Medium (yeah I know, not really a blog… (and yes, nested parentheses!))), something that is still customizeable (sorry, Svtble) and as an added bonus, something that’s built on top of Node.js.&lt;/p&gt;
-
-&lt;p&gt;Ghost is a perfect fit. The minimality (if that is a word) of it just makes me happy on a level that I can’t yet really appreciate fully. But I will, I’m sure of that. The one thing I’m not entirely sure about yet however is if I’m going to be hosting it on ghost.org or myself. Here it’s stable and will be kept updated even if I forget, but it costs money. Well, it’s going to cost me money in every case, I’ll just run through the 30 day trial and make up an opinion on the go I guess.&lt;/p&gt;
-
-&lt;p&gt;So much for now, here goes nothing!&lt;/p&gt;
-
-&lt;p&gt;P.S. One downside are the missing comments. But everything is open source, so it shouldn’t be much of an issue forking the default theme on Github and adding Disqus. I’ll keep that in mind for the future.&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; My main computer just died and while it’s in the Apple Store being fixed for a ridiculous amount of money, pushing new content to my Octopress running inside a Github repo is more of a hassle than anything else. Getting my SSH key out of my backup for starters and then installing Ruby/rake? No thanks.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Feb 2014 14:11:57 +0100</pubDate>
-        <link>http://blog.kilian.io/anustart/</link>
-        <guid isPermaLink="true">http://blog.kilian.io/anustart/</guid>
         
         
       </item>

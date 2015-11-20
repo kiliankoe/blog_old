@@ -62,7 +62,7 @@
                 
                     
                         <li>
-                            <a href="/archive.html">Archive</a>
+                            <a href="/archive/">Archive</a>
                         </li>
                     
                 
@@ -139,8 +139,8 @@
 
 <p>Unfortunately cask isn’t included in main homebrew repo, but don’t despair, that just makes us run one more command.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew tap caskroom/cask
-<span class="nv">$ </span>brew install brew-cask</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew tap caskroom/cask
+<span class="nv">$ </span>brew install brew-cask</code></pre></figure>
 
 <p>Note: You might find others online referencing to tap phinze/cask instead, which isn’t wrong, it’s just old. Fortunately GitHub redirects phinze/cask to caskroom/cask, but this might stop working one day, so just go with caskroom/cask and you won’t have to worry.</p>
 
@@ -150,42 +150,42 @@
 
 <p>First thing you should do is update cask:</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask update</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask update</code></pre></figure>
 
 <p>This is basically an alias to <code>git pull origin master</code> in the cask repo and updates your list of available casks to the current status. Running this often is key, as new casks are created and others are updated on a daily basis. Run this if you can’t find a cask or before installing one if you haven’t updated in a little why to ensure you get the newest version of an application.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask search app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask search app-name</code></pre></figure>
 
 <p>Want to know if an app you’re looking to install is available through cask? Just run this. The naming strategy is pretty straight forward with everything being lowercase and dashes for spaces. Search also finds partial results, so for example this works:</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">kilian@Apollo:~<span class="nv">$ </span>brew cask search <span class="nv">intellij</span>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">kilian@Apollo:~<span class="nv">$ </span>brew cask search <span class="nv">intellij</span>
 <span class="o">==</span>&gt; Partial matches
-intellij-idea	    intellij-idea-ce</code></pre></div>
+intellij-idea	    intellij-idea-ce</code></pre></figure>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask install app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask install app-name</code></pre></figure>
 
 <p>Installs an app. Simple. It also automatically runs through any zip files, disk images or packages. It’ll prompt you if an admin password is needed.
 One thing to note is that applications are by default <em>not</em> installed to <code>/Applications</code>, but to <code>/opt/homebrew-cask/Caskroom/app-name/version/app-name.app</code> and then symlinked to <code>~/Applications</code>. This is no problem for your mac, but in case you’d like to link it to <code>/Applications</code> instead, run the command like this <code>brew cask install app-name --appdir=/Applications</code>.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask uninstall app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask uninstall app-name</code></pre></figure>
 
 <p>This should be about as self-explanatory as it gets. As I mentioned already however this doesn’t just remove the application from your system, but for a few special apps that require their own uninstaller to be run, this is done instead.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask list</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask list</code></pre></figure>
 
 <p>Lists all your installed casks. If you run it together with an application name it’ll tell you which files are installed and where they reside.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask cleanup</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask cleanup</code></pre></figure>
 
 <p>Cleans up downloaded files which are usually not removed after installing an application. Might free you up quite a bit of space on your harddrive.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask home app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask home app-name</code></pre></figure>
 
 <p>Takes you to the homepage of an application. Be it the developer’s site, a GitHub repo or whatnot.</p>
 
 <p>And last but not least, an essential one if you’re an <a href="http://www.alfredapp.com/">Alfred</a>-junkie like me:</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask alfred link</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask alfred link</code></pre></figure>
 
 <p>This adds the install directory to Alfred’s search path so you can find your installed applications with Alfred.</p>
 
@@ -203,7 +203,7 @@ One thing to note is that applications are by default <em>not</em> installed to 
 
 <p>As you can see it just includes a command on each line without the <code>brew</code> command itself.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh">...
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh">...
 install node
 install ffmpeg
 ...
@@ -215,7 +215,7 @@ install brew-cask
 cask alfred link
 cleanup
 cask cleanup
-...</code></pre></div>
+...</code></pre></figure>
 
 <p>Lines starting with a <code>#</code> are comments and will be ignored by homebrew.</p>
 
@@ -229,16 +229,16 @@ cask cleanup
 
 <p>Now open up a terminal and navigate to the cask repo on your harddrive.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span><span class="nb">cd</span> /usr/local/Library/Taps/caskroom/homebrew-cask</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span><span class="nb">cd</span> /usr/local/Library/Taps/caskroom/homebrew-cask</code></pre></figure>
 
 <p>Let’s branch off into a feature branch to add the new cask.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git branch add-app-name
-<span class="nv">$ </span>git checkout add-app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git branch add-app-name
+<span class="nv">$ </span>git checkout add-app-name</code></pre></figure>
 
 <p>Now we can create the cask by running</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask create app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>brew cask create app-name</code></pre></figure>
 
 <p>Please check the <a href="https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#cask-naming-details">naming details</a> before naming your cask. The rest of the contributing guide contains all the following details as well, but I’m going to go through them anyways.</p>
 
@@ -246,27 +246,27 @@ cask cleanup
 
 <p>Time to commit. Add your cask and commit it with a sensible message containing the name and version number.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git add Casks/app-name.rb
-<span class="nv">$ </span>git commit -m <span class="s1">&#39;Add app-name v0.1&#39;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git add Casks/app-name.rb
+<span class="nv">$ </span>git commit -m <span class="s1">&#39;Add app-name v0.1&#39;</span></code></pre></figure>
 
 <p>Now let’s add our fork as a remote so we can push the changes to GitHub with one of the following two commands depending on if you interact with GitHub over SSH (second command) or not (first one).</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git remote add fork https://github.com/your-username/homebrew-cask.git
-<span class="nv">$ </span>git remote add fork git@github.com:your-username/homebrew-cask.git</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git remote add fork https://github.com/your-username/homebrew-cask.git
+<span class="nv">$ </span>git remote add fork git@github.com:your-username/homebrew-cask.git</code></pre></figure>
 
 <p>And push it.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git push fork add-app-name -u</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git push fork add-app-name -u</code></pre></figure>
 
 <p>You can now visit the <a href="https://github.com/caskroom/homebrew-cask">main cask repo</a> where a green button to submit your pull request should be greeting you. Click that, check the changed files just to be sure you did what you wanted and submit it. The repo is very active and presuming everything is awesome it shouldn’t be long for it to be merged.</p>
 
 <p>Just don’t forget to switch back to the master branch in your local cask repo, otherwise you won’t be getting future updates ;)</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git checkout master</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git checkout master</code></pre></figure>
 
 <p>You can also delete your local feature branch if everything is done.</p>
 
-<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git branch -d add-app-name</code></pre></div>
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>git branch -d add-app-name</code></pre></figure>
 
 <p>You’re now officially a contributer to cask, awesome stuff.</p>
 
