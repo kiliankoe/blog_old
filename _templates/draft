@@ -3,7 +3,9 @@ layout: {{ layout }}
 title: "{{ title }}"
 permalink: "foobar/"
 subtitle: "{{ subtitle }}"
-date: {{ date }}
+date:
+published: false
 author: {{ author }}
 header-img: "img/"
+comments: true
 ---
