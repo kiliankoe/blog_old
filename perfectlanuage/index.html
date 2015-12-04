@@ -9,9 +9,9 @@
     <meta name="description" content="Kilian's blog 'n stuff. Sounds about right.
 ">
 
-    <title>HeartBattery - trial and error</title>
+    <title>That Search for the Perfect Language - trial and error</title>
 
-    <link rel="canonical" href="http://blog.kilian.io/heartbattery/">
+    <link rel="canonical" href="http://blog.kilian.io/perfectlanuage/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -103,15 +103,15 @@
 
 
     <!-- Post Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+<header class="intro-header" style="background-image: url('/img/perfectlanguage.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>HeartBattery</h1>
+                    <h1>That Search for the Perfect Language</h1>
                     
                     <span class="meta">
-                        Posted by Kilian on November 20, 2015
+                        Posted by Kilian on December 4, 2015
                     </span>
                 </div>
             </div>
@@ -125,21 +125,68 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-				<p>A <a href="https://github.com/meepoSenpai">friend</a> recently had the fun idea to write a small script for his machine running Arch displaying his current battery state as a series of hearts instead of the traditional boring percentage. He did so via a short python script and the magic of Font Awesome to integrate with Conky.</p>
+				<p>Every few months (or weeks?) I fall into this desperate state of looking for a new programming language to familiarize myself with. There’s always something cool I come across, love for a while and then get bugged enough by the shortcomings that I no longer like it. All I want to do in this post is highlight a few languages I’ve spent some time with, fell in love with, built some stuff with, started disliking and so on (in no particular order). I do realize that this is a <em>highly</em> subjective topic open for a lot of personal opinion, and I’m definitely open for yours in the comments, but please don’t hate me for my feelings toward these languages.</p>
 
-<p>I have to admit that writing a quick script in your language of choice makes customization like this a lot easier than on OS X, but I liked the idea and wanted to follow along with something native as well. So today I wrote a little app in Swift titled HeartBattery.</p>
+<h3 id="python">Python</h3>
 
-<p><img src="/assets/heartbatterygif.gif" alt="menubar gif" /></p>
+<p>That language a lot of people refer to as being straight pseudo-code. Python really does have a wonderfully simple syntax (especially the slices!) and is mostly a joy to write. Most of it stays out of your way and you can just keep on typing. The only syntactic thing <em>really</em> bugging me were the constant <code>self</code> references everywhere.</p>
 
-<p>It doesn’t really do a whole lot besides pulling the state of your battery every five minutes and telling you a few things about it. The hardest part was actually getting the data and generating the image. Getting the data unfortunately isn’t as easy as reading it from a file somewhere like others systems do it, but you have to interface with some rather confusing C APIs. Not really wanting to do that I eventually stumbled across <a href="https://github.com/beltex/SystemKit">SystemKit</a>, a Swift lib that abstracts all that away and offers an API that couldn’t be much simpler. It’s from the same person behind <a href="https://github.com/beltex/dshb">dshb</a>, that amazingly pretty ncurses powered system monitor for OS X.</p>
+<p>It was my scripting language of choice for quite some time. Although I don’t believe I’ve ever touched much of Python 2, I am quite familiar with Python 3 and used it for pretty much anything I came across. Especially fun to touch were things powered by <a href="http://bottlepy.org/docs/dev/index.html">Bottle</a> and <a href="http://flask.pocoo.org">Flask</a>. That’s also why the project <a href="https://github.com/offenesdresden/ParkAPI">ParkAPI</a> exists in the way that it does.
+Python is definitely nice for smaller scripts and great libraries like matplotlib, but anything bigger quickly leaves you longing for missing things like types. I ❤️ types!</p>
 
-<p>Unfortunately it doesn’t seem possible to set a custom font for a status item and multiple images are also not an option (afaik), so I had to resort to compositing a few icons together on every refresh of the app to generate a single wide image for the menubar representing the current battery state. Really doesn’t feel like the cleanest option, but another thing learned can’t be bad either I guess.</p>
+<p>The tooling is rather meh as well. There’s pip, which works, but not very well in my opinion<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Packaging stuff for it is really rather painful and some installs leave you going almost insane. And you better hope you’ve got a virtual environment running beforehand (which is actually pretty sweet!), ‘cause nobody likes globally installed packages. And of course don’t forget to use pip3 if you’re not already in said virtualenv.</p>
 
-<p>If you want to have a look you can find the source and download link on the GitHub repo <a href="https://github.com/kiliankoe/HeartBattery">here</a>. And as usual, if you have any ideas, suggestions or think my code sucks and want to tell me how to improve it, please put a comment below or head straight for the issue/pullrequest 😊</p>
+<p>Also, it can be rather slow at times. Don’t get me wrong, My normal use-cases don’t really leave me at a need for extremely fast execution times, but it can be rather aggravating at times. And yes, I know that there are several ways of working around this and improving it somewhat, but nothing’s just perfect imho.</p>
 
-<p><img src="/assets/heartbatteryscreenshot.png" alt="app menu screenshot" /></p>
+<h3 id="ruby">Ruby</h3>
 
-<p>Now all that’s missing is a <em>bling</em> sound whenever you lose a heart 😄</p>
+<p>It doesn’t make much of a difference what kind of software development you do, you’re going to come in contact with ruby sooner or later. Especially on OS X. The best package manager for OS X, <a href="http://brew.sh">homebrew</a>, is written in ruby. The most popular dependency manager for iOS, <a href="https://cocoapods.org">Cocoapods</a>, is as well (although I kinda prefer <a href="https://github.com/Carthage/Carthage">Carthage</a>, just as an aside). Lots of things are written in ruby, even this blog here is powered by <a href="https://jekyllrb.com">Jekyll</a>, a ruby project. Aside from that, ruby is preinstalled on a lot of systems out there, a few friends only stumbled across a ruby interpreter on their Arch Linux machines a few months ago.</p>
+
+<p>The biggest 👍 is definitely the syntax. Ruby is extremely fun to write, supposedly optimized for developer happiness, and I can definitely verify that.</p>
+
+<p>Another cool thing about ruby is the ecosystem. I’m not necessarily talking about those thousands of friendly devs you can meet online and afk, but the amount of gems out there that you can use to accomplish almost anything without writing much code yourself. It really seems like there’s a gem for everything.
+That does bring us directly to ruby’s biggest downside. Dependency management. This hurts oh so very much… There’s a bunch of tools willing to help you out here (see <a href="http://bundler.io">bundler</a>, <a href="https://rvm.io">rvm</a> and <a href="https://github.com/rbenv/rbenv">rbenv</a>), but it just doesn’t work. It’ll probably work <em>fine</em> if all you’re working on is one big project where you can just install gems into a <code>vendor</code> directory with bundler or use rvm’s gemsets or I don’t know what, but if you have a bunch of small things with different gem requirements you’re going to lose your mind.
+I recently wanted to get a &lt;20 line ruby script with a few gems running as a cron job on a server. I literally spent a day getting that to run! And I seriously did not find a way besides having to install rvm, setting several environment variables in my crontab and moving the execution to a pointless shell script for no obvious reason. It was a <em>pain</em>!</p>
+
+<p>As nice as ruby’s syntax is, that really put me off it. I seriously regret that, but I can’t be dealing with that over and over.</p>
+
+<p>It’s also missing types the same way python is and speed is a topic we won’t even touch.</p>
+
+<h3 id="java">Java</h3>
+
+<p>I don’t think I know a handful of people who’ve never written Java. Most of us go through Java at some point of our lives in school or university. Most move on to other languages, some stay because they like it. I’m not one of the latter ones.</p>
+
+<h3 id="swift">Swift</h3>
+
+<h3 id="nodejs">Node.js</h3>
+
+<h3 id="clojure">Clojure</h3>
+
+<h3 id="coffeescript">Coffeescript</h3>
+
+<h3 id="go">Go</h3>
+
+<p>Some others worth mentioning:</p>
+
+<h4 id="objective-c">Objective-C</h4>
+
+<h4 id="c">C</h4>
+
+<h4 id="php">PHP</h4>
+
+<h4 id="crystal">Crystal</h4>
+
+<h5 id="add-code-samples">ADD CODE SAMPLES!</h5>
+
+<p>Header image by Ruiwen Chua on <a href="https://www.flickr.com/photos/ruiwen/3260095534/">Flickr</a></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I’ve heard about newer (and supposedly better) alternatives like <a href="http://docs.continuum.io/anaconda/index">Anaconda</a>, but I’ve never seen them in action or touched them. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
                 
@@ -164,13 +211,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/disqus-and-jekyll/" data-toggle="tooltip" data-placement="top" title="Using Disqus With Jekyll">&larr; Previous Post</a>
+                        <a href="/heartbattery/" data-toggle="tooltip" data-placement="top" title="HeartBattery">&larr; Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/perfectlanuage/" data-toggle="tooltip" data-placement="top" title="That Search for the Perfect Language">Next Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
