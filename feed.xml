@@ -6,81 +6,9 @@
 </description>
     <link>http://blog.kilian.io/</link>
     <atom:link href="http://blog.kilian.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Dec 2015 01:39:40 +0100</pubDate>
-    <lastBuildDate>Fri, 04 Dec 2015 01:39:40 +0100</lastBuildDate>
+    <pubDate>Fri, 04 Dec 2015 10:03:32 +0100</pubDate>
+    <lastBuildDate>Fri, 04 Dec 2015 10:03:32 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
-    
-      <item>
-        <title>That Search for the Perfect Language</title>
-        <description>&lt;p&gt;Every few months (or weeks?) I fall into this desperate state of looking for a new programming language to familiarize myself with. There’s always something cool I come across, love for a while and then get bugged enough by the shortcomings that I no longer like it. All I want to do in this post is highlight a few languages I’ve spent some time with, fell in love with, built some stuff with, started disliking and so on (in no particular order). I do realize that this is a &lt;em&gt;highly&lt;/em&gt; subjective topic open for a lot of personal opinion, and I’m definitely open for yours in the comments, but please don’t hate me for my feelings toward these languages.&lt;/p&gt;
-
-&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
-
-&lt;p&gt;That language a lot of people refer to as being straight pseudo-code. Python really does have a wonderfully simple syntax (especially the slices!) and is mostly a joy to write. Most of it stays out of your way and you can just keep on typing. The only syntactic thing &lt;em&gt;really&lt;/em&gt; bugging me were the constant &lt;code&gt;self&lt;/code&gt; references everywhere.&lt;/p&gt;
-
-&lt;p&gt;It was my scripting language of choice for quite some time. Although I don’t believe I’ve ever touched much of Python 2, I am quite familiar with Python 3 and used it for pretty much anything I came across. Especially fun to touch were things powered by &lt;a href=&quot;http://bottlepy.org/docs/dev/index.html&quot;&gt;Bottle&lt;/a&gt; and &lt;a href=&quot;http://flask.pocoo.org&quot;&gt;Flask&lt;/a&gt;. That’s also why the project &lt;a href=&quot;https://github.com/offenesdresden/ParkAPI&quot;&gt;ParkAPI&lt;/a&gt; exists in the way that it does.
-Python is definitely nice for smaller scripts and great libraries like matplotlib, but anything bigger quickly leaves you longing for missing things like types. I ❤️ types!&lt;/p&gt;
-
-&lt;p&gt;The tooling is rather meh as well. There’s pip, which works, but not very well in my opinion&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Packaging stuff for it is really rather painful and some installs leave you going almost insane. And you better hope you’ve got a virtual environment running beforehand (which is actually pretty sweet!), ‘cause nobody likes globally installed packages. And of course don’t forget to use pip3 if you’re not already in said virtualenv.&lt;/p&gt;
-
-&lt;p&gt;Also, it can be rather slow at times. Don’t get me wrong, My normal use-cases don’t really leave me at a need for extremely fast execution times, but it can be rather aggravating at times. And yes, I know that there are several ways of working around this and improving it somewhat, but nothing’s just perfect imho.&lt;/p&gt;
-
-&lt;h3 id=&quot;ruby&quot;&gt;Ruby&lt;/h3&gt;
-
-&lt;p&gt;It doesn’t make much of a difference what kind of software development you do, you’re going to come in contact with ruby sooner or later. Especially on OS X. The best package manager for OS X, &lt;a href=&quot;http://brew.sh&quot;&gt;homebrew&lt;/a&gt;, is written in ruby. The most popular dependency manager for iOS, &lt;a href=&quot;https://cocoapods.org&quot;&gt;Cocoapods&lt;/a&gt;, is as well (although I kinda prefer &lt;a href=&quot;https://github.com/Carthage/Carthage&quot;&gt;Carthage&lt;/a&gt;, just as an aside). Lots of things are written in ruby, even this blog here is powered by &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a ruby project. Aside from that, ruby is preinstalled on a lot of systems out there, a few friends only stumbled across a ruby interpreter on their Arch Linux machines a few months ago.&lt;/p&gt;
-
-&lt;p&gt;The biggest 👍 is definitely the syntax. Ruby is extremely fun to write, supposedly optimized for developer happiness, and I can definitely verify that.&lt;/p&gt;
-
-&lt;p&gt;Another cool thing about ruby is the ecosystem. I’m not necessarily talking about those thousands of friendly devs you can meet online and afk, but the amount of gems out there that you can use to accomplish almost anything without writing much code yourself. It really seems like there’s a gem for everything.
-That does bring us directly to ruby’s biggest downside. Dependency management. This hurts oh so very much… There’s a bunch of tools willing to help you out here (see &lt;a href=&quot;http://bundler.io&quot;&gt;bundler&lt;/a&gt;, &lt;a href=&quot;https://rvm.io&quot;&gt;rvm&lt;/a&gt; and &lt;a href=&quot;https://github.com/rbenv/rbenv&quot;&gt;rbenv&lt;/a&gt;), but it just doesn’t work. It’ll probably work &lt;em&gt;fine&lt;/em&gt; if all you’re working on is one big project where you can just install gems into a &lt;code&gt;vendor&lt;/code&gt; directory with bundler or use rvm’s gemsets or I don’t know what, but if you have a bunch of small things with different gem requirements you’re going to lose your mind.
-I recently wanted to get a &amp;lt;20 line ruby script with a few gems running as a cron job on a server. I literally spent a day getting that to run! And I seriously did not find a way besides having to install rvm, setting several environment variables in my crontab and moving the execution to a pointless shell script for no obvious reason. It was a &lt;em&gt;pain&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;As nice as ruby’s syntax is, that really put me off it. I seriously regret that, but I can’t be dealing with that over and over.&lt;/p&gt;
-
-&lt;p&gt;It’s also missing types the same way python is and speed is a topic we won’t even touch.&lt;/p&gt;
-
-&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
-
-&lt;p&gt;I don’t think I know a handful of people who’ve never written Java. Most of us go through Java at some point of our lives in school or university. Most move on to other languages, some stay because they like it. I’m not one of the latter ones.&lt;/p&gt;
-
-&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
-
-&lt;h3 id=&quot;nodejs&quot;&gt;Node.js&lt;/h3&gt;
-
-&lt;h3 id=&quot;clojure&quot;&gt;Clojure&lt;/h3&gt;
-
-&lt;h3 id=&quot;coffeescript&quot;&gt;Coffeescript&lt;/h3&gt;
-
-&lt;h3 id=&quot;go&quot;&gt;Go&lt;/h3&gt;
-
-&lt;p&gt;Some others worth mentioning:&lt;/p&gt;
-
-&lt;h4 id=&quot;objective-c&quot;&gt;Objective-C&lt;/h4&gt;
-
-&lt;h4 id=&quot;c&quot;&gt;C&lt;/h4&gt;
-
-&lt;h4 id=&quot;php&quot;&gt;PHP&lt;/h4&gt;
-
-&lt;h4 id=&quot;crystal&quot;&gt;Crystal&lt;/h4&gt;
-
-&lt;h5 id=&quot;add-code-samples&quot;&gt;ADD CODE SAMPLES!&lt;/h5&gt;
-
-&lt;p&gt;Header image by Ruiwen Chua on &lt;a href=&quot;https://www.flickr.com/photos/ruiwen/3260095534/&quot;&gt;Flickr&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I’ve heard about newer (and supposedly better) alternatives like &lt;a href=&quot;http://docs.continuum.io/anaconda/index&quot;&gt;Anaconda&lt;/a&gt;, but I’ve never seen them in action or touched them. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 04 Dec 2015 00:41:01 +0100</pubDate>
-        <link>http://blog.kilian.io/perfectlanuage/</link>
-        <guid isPermaLink="true">http://blog.kilian.io/perfectlanuage/</guid>
-        
-        
-      </item>
     
       <item>
         <title>HeartBattery</title>
@@ -538,6 +466,53 @@ Instead of directly buying a new wheel (and new brakes, thank you, asshole! Oh, 
         <pubDate>Mon, 21 Apr 2014 15:17:11 +0200</pubDate>
         <link>http://blog.kilian.io/bikethievery/</link>
         <guid isPermaLink="true">http://blog.kilian.io/bikethievery/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Optimizing My Life - Part One: Decluttering</title>
+        <description>&lt;p&gt;Optimizing every single aspect of my digital live is something I’ve been enjoying for years. It’s the little things, being able to define a new shortcut for a task that I do all day, streamlining a complex process that has had me looking up howtos everytime I had to do it, but the same has never really held true for my life away from the keyboard. I’m definitely not what you would call messy, but the organization of my desk, room or now my apartment has never been one of my strengths. I now aim to change all of that. And there’s several steps I’m taking to get there.&lt;/p&gt;
+
+&lt;p&gt;So, let’s start with something that I’ve already started doing recently, living paperless.&lt;/p&gt;
+
+&lt;p&gt;Pretty much everything I receive via snail mail (minus the spam) is scanned and digitally filed away in the software &lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt;. Evernote is not perfect, but once you manage to adjust it to your needs, it almost feels right. Additionally your stuff becomes searchable, also from mobile, which actually is a huge plus!
+After scanning, if it’s something I actually need to keep (mostly for legal reasons - which is surprisingly little by the way), it’s put onto the top of a pile living inside of a box. This pile is something I will probably never look through again, but it’s obviously sorted chronologically, so I would theoretically be able to find something should I ever need to do so.
+Everything else? Trash it. Might seem harsh, but there’s no reason to keep it around and all it does is bog you down.&lt;/p&gt;
+
+&lt;p&gt;I’ve been following this routine for only about two weeks now, but it’s already made a difference. I’ve actually run into a few situations where I need some kind of information about previous employments or bank statements, which are found within seconds in the digital archive.&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;As a sidenote: If you’re not a fan of Evernote, make sure to take a very close look at the other software (if any) you’re choosing for the job. I actually went through a few, and pretty much every other way has shortcomings that will ruin your fun. I’m not going to directly mention anyone, but I’d gladly give advice to anyone willing to contact me directly.&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;However, living paperless is just one aspect, there’s a lot more junk lying around that you never really need.&lt;/p&gt;
+
+&lt;p&gt;Something that seems to pile up quite a bit over the years without ever becoming less are clothes. And if you’re someone like me, this applies especially to T-Shirts. You get them for &lt;em&gt;everything&lt;/em&gt; and from &lt;em&gt;anywhere&lt;/em&gt;. But are you really going to wear that one shirt you got from that one fair three years ago? No. Give it away. Keep the memory, it’s worth more.&lt;/p&gt;
+
+&lt;p&gt;What about digital media? In the times of Spotify and Netflix (or similar services all across the globe), is there really any need at all to keep physical collections of music, movies and TV series? Nope, not at all. Sell ‘em.&lt;/p&gt;
+
+&lt;p&gt;Same goes for books actually. Now I’m a huge fan of ebooks, but that doesn’t go for everybody. There’s something about books however (actually, not just books) that makes us want to own them. Especially the good stuff, which is kind of obvious. I don’t know if it’s about showing off what you like at home or something else, but it’s definitely not necessary. Borrowing books from friends or the library is just as good. Or sell yours off on Amazon, share the love of a good book. &lt;em&gt;Never&lt;/em&gt; throw away a book though, there’s a special place in hell reserved for people who trash books.&lt;/p&gt;
+
+&lt;p&gt;Another big one is all of that stuff that belongs to your &lt;em&gt;fantasy self&lt;/em&gt;, you know, that version of you touring the globe and living your dreams. Either actually go ahead and pursue those dreams or rid yourself of that stuff. And don’t worry, everybody’s got those unrealistic views of themselves.&lt;/p&gt;
+
+&lt;p&gt;Use this mentality and tour around your room, apartment, house or whatever and sort out the stuff you don’t need. None of that &lt;em&gt;but maybe someday…&lt;/em&gt; bullshit. If you don’t need it, out it goes. Anything else can be bought, rented or borrowed when you actually do need it.&lt;/p&gt;
+
+&lt;!-- #### The Digital Stuff
+
+Yeah... It&#39;s not just the analog world. I spend a huge amount of my time in front of a screen and the digital world is just as important to me as the analog counterpart, but here I want to just quickly mention two small areas that have caught my eye especially.
+
+The two big problematic areas of my digital life are my downloads directory and my browser bookmarks. I&#39;ve been using my bookmarks as a read-later list for years now, but I might as well just have been piping them directly into /dev/null. If that sounds like you, give up the idea of saving something for later. Read it now, or close that tab. You might just as well clean out your RSS feeds as well, looking at it from that angle, it might not have been bad that Google Reader shut down.
+
+For that ever-growing downloads directory, which is more of a tmp directory for everything, I&#39;ve had a lot of success with using a software called [Hazel](http://www.noodlesoft.com/hazel.php) to delete everything that&#39;s been there for over seven days. If you actually shut down your computer, a @reboot cronjob doing the same might work for you, just be sure to don&#39;t put anything vital into that directory. --&gt;
+
+&lt;p&gt;All of this is super simple stuff, you just actually have to do it. I’ve found some immense fun in playing through the idea of fitting my entire life into a single suitcase. And even though I still can’t manage something that extreme, I’m keeping that thought in my head and applying it to the things around me. It changes how I think about my belongings immensely.&lt;/p&gt;
+
+&lt;p&gt;If you’re intrigued in any way, go ahead and see if this works out for you as well.&lt;/p&gt;
+
+&lt;p&gt;I’ll see about heading towards part two of this series soon. This was just the beginning.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Feb 2014 14:15:29 +0100</pubDate>
+        <link>http://blog.kilian.io/decluttering/</link>
+        <guid isPermaLink="true">http://blog.kilian.io/decluttering/</guid>
         
         
       </item>
