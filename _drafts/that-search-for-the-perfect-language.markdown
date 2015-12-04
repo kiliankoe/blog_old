@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "That Search for the Perfect Language"
-date: 2015-12-04T00:41:01+01:00
+date: 
 permalink: "perfectlanuage/"
 header-img: "img/perfectlanguage.jpg"
 comments: true
+published: false
 ---
 
 Every few months (or weeks?) I fall into this desperate state of looking for a new programming language to familiarize myself with. There's always something cool I come across, love for a while and then get bugged enough by the shortcomings that I no longer like it. All I want to do in this post is highlight a few languages I've spent some time with, fell in love with, built some stuff with, started disliking and so on (in no particular order). I do realize that this is a *highly* subjective topic open for a lot of personal opinion, and I'm definitely open for yours in the comments, but please don't hate me for my feelings toward these languages.
