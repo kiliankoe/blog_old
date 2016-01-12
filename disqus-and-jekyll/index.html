@@ -62,7 +62,7 @@
                 
                     
                         <li>
-                            <a href="/archive/">Archive</a>
+                            <a href="/archive.html">Archive</a>
                         </li>
                     
                 
@@ -137,7 +137,7 @@
 
 <p>There’s two things listed on the page. The embed code for the comments themselves and the embed code for displaying the comment count. Let’s start with the first.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">%</span><span class="p">}</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span><span class="o">%</span> <span class="k">if</span> <span class="nx">page</span><span class="p">.</span><span class="nx">comments</span> <span class="o">%</span><span class="p">}</span>
 <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;disqus_thread&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
 <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
     <span class="cm">/* * * CONFIGURATION VARIABLES * * */</span>
@@ -151,7 +151,7 @@
     <span class="p">})();</span>
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 <span class="o">&lt;</span><span class="nx">noscript</span><span class="o">&gt;</span><span class="nx">Please</span> <span class="nx">enable</span> <span class="nx">JavaScript</span> <span class="nx">to</span> <span class="nx">view</span> <span class="nx">the</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&quot;https://disqus.com/?ref_noscript&quot;</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&quot;nofollow&quot;</span><span class="o">&gt;</span><span class="nx">comments</span> <span class="nx">powered</span> <span class="nx">by</span> <span class="nx">Disqus</span><span class="p">.</span><span class="o">&lt;</span><span class="err">/a&gt;&lt;/noscript&gt;</span>
-<span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span></code></pre></figure>
+<span class="p">{</span><span class="o">%</span> <span class="nx">endif</span> <span class="o">%</span><span class="p">}</span></code></pre></div>
 
 <p>I wrapped the code from Disqus in a liquid if statement as well. This checks if your post’s frontmatter contains a comments field. Go ahead and add that as <code>comments: true</code>. Doing it this way lets you disable comments for a post if needed.</p>
 
@@ -163,7 +163,7 @@
 
 <p>Add the following code to your <code>_includes/footer.html</code> (be sure to change your shortname if copying from here).</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c">&lt;!--</span> <span class="nx">Disqus</span> <span class="nx">Comments</span> <span class="o">--&gt;</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c">&lt;!--</span> <span class="nx">Disqus</span> <span class="nx">Comments</span> <span class="o">--&gt;</span>
 <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
     <span class="cm">/* * * CONFIGURATION VARIABLES * * */</span>
     <span class="kd">var</span> <span class="nx">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;yourdisqusshortname&#39;</span><span class="p">;</span>
@@ -175,21 +175,21 @@
         <span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;//&#39;</span> <span class="o">+</span> <span class="nx">disqus_shortname</span> <span class="o">+</span> <span class="s1">&#39;.disqus.com/count.js&#39;</span><span class="p">;</span>
         <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;HEAD&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;BODY&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
     <span class="p">}());</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></figure>
+<span class="o">&lt;</span><span class="err">/script&gt;</span></code></pre></div>
 
 <p>This code will be responsible for checking all occurrences of comment counts on the page and updating them. First we’re going to have to tell it where these comment counts are.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">{% if post.comments %}
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% if post.comments %}
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{% post.url %}index.html#disqus_thread&quot;</span> <span class="na">data-disqus-identifier=</span><span class="s">&quot;{% post.url %}&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
-{% endif %}</code></pre></figure>
+{% endif %}</code></pre></div>
 
 <p>This is the code you’ll want to insert in your <code>index.html</code> wherever you want comment counts for a specific post. It sets a custom Disqus identifier which relies only on the post’s permalink, which is rather handy if your blog’s URL should ever change.</p>
 
 <p>The code is slightly different when adding this to the post’s page. This goes into <code>_layouts/post.html</code>:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">{% if page.comments %}
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% if page.comments %}
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{% page.url %}index.html#disqus_thread&quot;</span> <span class="na">data-disqus-identifier=</span><span class="s">&quot;{% page.url %}&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
-{% endif %}</code></pre></figure>
+{% endif %}</code></pre></div>
 
 <p>See how this uses <code>page</code> instead of <code>post</code>.</p>
 
