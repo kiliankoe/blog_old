@@ -19,4 +19,4 @@ If you want to have a look you can find the source and download link on the GitH
 
 ![app menu screenshot]({{ site.baseurl }}/assets/heartbatteryscreenshot.png)
 
-Now all that's missing is a *bling* sound whenever you lose a heart 😄
+Now all that's missing is a *bling* sound whenever you lose a heart 😄 And something for WiFi.
