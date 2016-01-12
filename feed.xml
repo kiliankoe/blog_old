@@ -6,19 +6,21 @@
 </description>
     <link>http://blog.kilian.io/</link>
     <atom:link href="http://blog.kilian.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Dec 2015 11:00:17 +0100</pubDate>
-    <lastBuildDate>Tue, 29 Dec 2015 11:00:17 +0100</lastBuildDate>
+    <pubDate>Tue, 12 Jan 2016 12:21:35 +0100</pubDate>
+    <lastBuildDate>Tue, 12 Jan 2016 12:21:35 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>32c3</title>
-        <description>&lt;p&gt;foobar&lt;/p&gt;
+        <title>New Blog... Again</title>
+        <description>&lt;p&gt;Moving… Again. I have my reasons that I’ll gladly tell you about. Don’t want to write them down though.&lt;/p&gt;
 
-&lt;p&gt;Header image by t–h–s on &lt;a href=&quot;https://www.flickr.com/photos/------------------------------/23912833751/in/photolist-Cr6wn6-CoPQhu-Cw5UKu-CqoW9N-BDQYqa-CBej8e-CyVxvq-CrEHjm-CBeimK-C3HZLi-Ca6XeW-BDQWTT-Ca6X3d-CyVw2d-BB15nv-BB151P-Cw5VDd-CyoFmM-CyoDS4-BDmbPX-CrwYba-BZCGYD-CzPuqx-BCGyeM-BAWdjS-CuEs78-BAJAQh-CBUEQi-BExHEg-Csntw8-C9DYTQ-BDoYcB-Ctug66-BDgAym-CrZ1Qr-C3ecrR-BDdM2b-C9B8Tj-C9B8eo-BDdHyQ-CAJupe-CraLWE-CyqGf7-CtrjvZ-C3dZkr-CtrgJr-CyqAuE-BDdxhY-CtrcKV-Ctr9rR&quot;&gt;Flickr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This post is just for informing you about the feed URL changing. Domain stays the same. We’re going to &lt;a href=&quot;http://blog.kilian.io/rss&quot;&gt;blog.kilian.io/rss&lt;/a&gt;. Should be working in a few minutes/hours.&lt;/p&gt;
+
+&lt;p&gt;See you on the other side :)&lt;/p&gt;
 </description>
-        <pubDate>Tue, 29 Dec 2015 17:00:00 +0100</pubDate>
-        <link>http://blog.kilian.io/32c3/</link>
-        <guid isPermaLink="true">http://blog.kilian.io/32c3/</guid>
+        <pubDate>Tue, 12 Jan 2016 12:14:15 +0100</pubDate>
+        <link>http://blog.kilian.io/newblog/</link>
+        <guid isPermaLink="true">http://blog.kilian.io/newblog/</guid>
         
         
       </item>
@@ -39,7 +41,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/heartbatteryscreenshot.png&quot; alt=&quot;app menu screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now all that’s missing is a &lt;em&gt;bling&lt;/em&gt; sound whenever you lose a heart 😄&lt;/p&gt;
+&lt;p&gt;Now all that’s missing is a &lt;em&gt;bling&lt;/em&gt; sound whenever you lose a heart 😄 And something for WiFi.&lt;/p&gt;
 </description>
         <pubDate>Fri, 20 Nov 2015 01:41:59 +0100</pubDate>
         <link>http://blog.kilian.io/heartbattery/</link>
