@@ -4,8 +4,8 @@ title: "{{ title }}"
 permalink: "foobar/"
 subtitle: "{{ subtitle }}"
 date:
-published: false
 author: {{ author }}
 header-img: "img/"
 comments: true
+published: false
 ---
